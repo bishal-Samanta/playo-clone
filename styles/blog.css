@@ -245,6 +245,76 @@
     /* Static news part End */
 
 
+    /* Dynamic part start */
+
+    .dynamic-news{
+        border: 1px solid black;
+        min-height: 70px;
+        display: grid;
+        grid-template-columns: 45.5% 45.5%;
+        justify-content: space-between;
+        padding-right: 25px;
+        row-gap: 28px;
+    }
+
+    .dynamic-news>div{
+        height: 292px;
+        border: 1px solid black;
+    }
+    .dynamic-news>div>div:nth-child(1){
+        height: 160px;
+    }
+
+    .dynamic-news>div>div:nth-child(1)>img{
+        height: 160px;
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .dynamic-news>div>div:nth-child(2){
+        border: 1px solid transparent;
+        margin-top: 0px;
+        height: 25px;
+        padding-left: 10px;
+        font-family: "Open Sans", Arial, sans-serif;
+        font-size: 11px;
+        line-height: 25px;
+        color: #a6a6a6;
+        background-color: #f2f2f2;
+    }
+
+    .dynamic-news>div>div:nth-child(3){
+        height: 36px;
+        margin-top: 5px;
+        font-family: "Roboto Slab", Georgia, serif;
+        color: #19232d;
+        font-size: 14px;
+        line-height: 18.2px;
+        padding-left: 14px;
+        padding-right: 14px;
+        overflow: hidden;
+        border-left: 3px solid #548A2F;
+    }
+
+    .dynamic-news>div>div:nth-child(3):hover{
+        text-decoration: underline;
+    }
+
+    .dynamic-news>div>div:nth-child(4){
+        height: 44px;
+        margin-top: 17px;
+        font-family: "Open Sans", Arial, sans-serif;
+        font-size: 13px;
+        line-height: 22.282px;
+        color: #949697;
+        padding-right: 15px;
+        overflow: hidden;
+        border: 1px solid transparent;
+    }
+
+
+
+    /* Dynamic part End */
 
     /* Left Box End*/
 
