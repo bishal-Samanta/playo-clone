@@ -50,7 +50,8 @@
     import appendNews from "../components/appendnews.js";
     import apiCall from "../components/apicall.js";
 
-    let bloglink = "https://newsapi.org/v2/top-headlines?country=in&category=sports&pageSize=10&apiKey=b140754e118c4b63a8e580772d4446a1";
+    //let apiKey_blog = "b140754e118c4b63a8e580772d4446a1";
+    let bloglink = `https://newsapi.org/v2/top-headlines?country=in&category=sports&pageSize=10&apiKey=${apiKey_blog}`;
     let response = apiCall(bloglink);
     response.then((res)=>{
         console.log(res.articles);

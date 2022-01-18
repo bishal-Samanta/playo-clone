@@ -165,7 +165,7 @@
     /* Main Container */
     .main-blog-container{
         min-height: 100vh;
-        border: 1px solid red;
+        border: 1px solid transparent;
         padding-bottom: 40px;
         display: flex;
         flex-direction: row;
@@ -328,11 +328,103 @@
 
 
 
-    /* Right Box */
+    /* Right Box Start*/
     .right-box{
         
         width: 32.5%;
+        padding-left: 25px;
     }
+
+    /* Head Box start */
+    .head-box{
+        height: 34px;
+        background-color: #f2f2f2;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 35px;
+    }
+
+    .head-box >div{
+        height: 32px;
+        display: flex;
+        align-items: center;
+        font-family: "Open Sans", Arial, sans-serif;
+        font-size: 13px;
+        line-height: 19.5px;
+        color: #19232d;
+        width: 26%;
+        justify-content: center;
+    }
+
+    .head-box >div:nth-child(1){
+        border-bottom: 2px solid #548A2F;
+    }
+
+    .head-box >div:hover:{
+        border-bottom: 2px solid #548A2F;
+    }
+
+    /* Head Box End */
+
+    /* Random Blog start */
+
+    .random-blog{
+        display: flex;
+        flex-direction: column;
+        min-height: 100px;
+        border: 1px solid transparent;
+    }
+
+    .random-blog>div{
+        height: 203px;
+        border: 1px solid transparent;
+        margin-bottom: 27px;
+        position: relative;
+    }
+    .random-blog>div> img{
+        height: 203px;
+        width: 100%;
+        filter: brightness(60%);
+        
+    }
+
+    .random-blog>div>div:nth-child(2){
+        font-family: "Open Sans", Arial, sans-serif;
+        font-size: 11px;
+        line-height: 25px;
+        z-index: 5;
+        position: absolute;
+        top: 110px;
+        left: 13px;
+        color: #ffffff;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 3px 0px;
+
+    }
+
+    .random-blog>div>div:nth-child(3){
+        font-family: "Roboto Slab", Georgia, serif;
+        font-size: 14px;
+        line-height: 18.2px;
+        position: absolute;
+        z-index: 5;
+        top: 150px;
+        color: white;
+        left: 13px;
+        padding-right: 35px;
+        border: 1px solid transparent;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 3px 0px;
+    }
+
+
+
+
+
+
+
+     /* Random Blog End */
+
+
+    /* Right Box End*/
 
 /* ===Main Contyent Box End === */
 
