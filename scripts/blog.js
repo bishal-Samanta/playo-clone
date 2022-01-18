@@ -9,6 +9,8 @@
 
 
 
+
+
     
     let quoteUrl = "https://bodybuilding-quotes1.p.rapidapi.com/random-quote";
     fetch(quoteUrl, {
@@ -151,6 +153,55 @@
 
 
 //If user click one sports button end==========================>
+
+
+//Search Feature in news api start================================>
+
+
+    document.querySelector("#search").addEventListener('keypress' , (event)=>{
+        //console.log(event);
+        let value = document.querySelector("#search").value;
+
+        if(value == "" || value == undefined || value == null){
+            fetchNews()
+            return false;
+        }
+        
+        if(event.key == "Enter"){
+       
+
+        //code for search feature
+        //https://newsapi.org/v2/everything?q=Apple&from=2022-01-18&sortBy=popularity&apiKey=API_KEY
+     
+        console.log("test")
+        let search_key = "b140754e118c4b63a8e580772d4446a1";
+        let search_link = `https://newsapi.org/v2/everything?q=${value}&from=2022-01-18&sortBy=popularity&pageSize=10&language=en&apiKey=${search_key}`;
+        let response_search = apiCall(search_link);
+        response_search.then((res)=>{
+            console.log(res.articles);
+            let appendlocation = document.querySelector(".dynamic-news");
+            appendNews(res.articles, appendlocation);
+        })
+        .catch((e)=>{
+            console.log(e);
+        })
+
+        console.log("Test")
+
+        }
+
+    })
+
+
+
+
+
+
+
+
+
+
+//Search Feature in news api End================================>
 
 
 
