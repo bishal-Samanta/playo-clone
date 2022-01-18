@@ -11,6 +11,7 @@
         background-color: #FEFEFF;
         width: 75%;
         margin: auto;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     }
 
 /*==== Top Bar Design start ====*/
@@ -110,13 +111,85 @@
 /* === Banner End === */
 
 
+
+/* === Navbar start === */
     .navbar{
         height: 45px;
-        background-color: #efefef;
+        background-color: #FEFEFF;
+        padding-left: 25px;
+        padding-right: 25px;        
+        margin-bottom: 40px;
+    }
+
+    .navbar> div{
+        height: 100%;
+        width: 100%;
+        background-color: #F3F3F2;
+        display: flex;
         
     }
 
-    #mainblog{
-        height: 70px;
-        background-color: black;
+    .navbar> div>div{
+     
+        width: 8.2%;
+        display: flex;
+        height: 43px;
+        justify-content: center;
+        align-items: center;
+        font-family: "Open Sans", Arial, sans-serif;
+        line-height: 43px;
+        font-size: 14px;
+        color: #19232d;
     }
+
+    .navbar> div>div:hover{
+        border-bottom: 2px solid #548A2F;
+        height: 43px;
+        background-color: white;
+    }
+
+/* === Navbar End === */
+
+
+/* ===Main Contyent Box start === */
+    #Container{
+
+        background-color: #FEFEFF;
+        border: 1px solid transparent;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .main-blog-container{
+        min-height: 100vh;
+        border: 1px solid red;
+        padding-bottom: 40px;
+    }
+
+/* ===Main Contyent Box End === */
+
+
+
+/* === Footer design Start ===  */
+
+    .footer{
+        height: 68px;
+        background-color: #E3E3E3;
+        padding-top: 14px;
+        padding-left: 25px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+
+    }
+
+    .footer > div{
+        font-family: "Open Sans", Arial, sans-serif;
+        font-size: 13px;
+        line-height: 19.5px;
+        color: #2c3a49;
+
+    }
+
+
+/* === Footer design End ===  */
+
