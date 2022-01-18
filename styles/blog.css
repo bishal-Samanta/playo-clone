@@ -1,0 +1,112 @@
+    body{
+        margin: 0;
+        box-sizing: border-box;
+        background-color: #EEEFEF;
+    }
+
+
+    #main{
+        min-height: 99vh;
+        border: none;
+        background-color: #FEFEFF;
+        width: 71%;
+        margin: auto;
+    }
+
+/*==== Top Bar Design start ====*/
+
+    .topbar{
+        height: 41px;
+        border: none;
+        border-top: 5px solid #548A2F;
+        background-color: #F3F3F2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 27px;
+        padding-right: 27px;
+        align-items: center;
+    }
+
+   
+
+    .topbar > div:nth-child(1){
+        display: flex;
+    }
+
+     /* Trending Div */
+
+    .topbar > div:nth-child(1) > div:nth-child(1){
+        font-family: "Open Sans", Arial, sans-serif;
+        line-height: 21px;
+        font-size: 14px;
+        color: #558b2f;
+        margin-right: 20px;
+
+    }
+
+    /* Quote Div */
+
+    .topbar > div:nth-child(1) > div:nth-child(2){
+        font-family: "Open Sans", Arial, sans-serif;
+        line-height: 18.2px;
+        color: #656565;
+        font-size: 14px;
+        border: 1px solid transparent;
+        height: 20px;
+        overflow: hidden;
+        padding-left: 10px;
+    }
+
+    .topbar > div:nth-child(1) > div:nth-child(2):hover{
+        text-decoration: underline;
+        color: #464646;
+    }
+
+    /* Input Div */
+
+    #search{
+        height: 24px;
+        width: 180px;
+        background-color: #E9E9E9;
+        border: none;
+        padding-left: 8px;
+        color: #A19C99;
+        position: relative;
+    }
+
+    #search:focus{
+        outline: none;
+    }
+    .fa{
+        color: #A19C99;
+        font-size: 13px;
+        position: absolute;
+        top: 20px;
+        right: 17%;
+    }
+
+
+/* ===Top Bar Design End ===*/
+
+
+
+/* === Banner Start === */
+    .banner{
+        height: 143px;
+        border: 1px solid black;
+        background-color: #FEFEFF;
+    }
+
+/* === Banner End === */
+
+
+    .navbar{
+        height: 45px;
+        background-color: #efefef;
+    }
+
+    #mainblog{
+        height: 70px;
+        background-color: black;
+    }
