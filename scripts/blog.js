@@ -1,7 +1,7 @@
 
 
-    //Import api call Function Components
-    import apiCall from "../components/apicall.js";
+   
+    
 
     
     
@@ -32,12 +32,45 @@
 
 // By Clicking static blog content
     document.querySelector("#first-blog").addEventListener("click", ()=>{
-        window.location = "https://blog.playo.co/humansofplayo-how-to-submit-a-story/"
+       
+        window.open("https://blog.playo.co/humansofplayo-how-to-submit-a-story/" , '_blank');
     })
 
     document.querySelector("#sec-blog").addEventListener("click", ()=>{
-        window.location = "https://blog.playo.co/guidelines-to-playsafe-in-the-times-of-covid-19/"
+        
+        window.open("https://blog.playo.co/guidelines-to-playsafe-in-the-times-of-covid-19/" , '_blank');
+
     })
 
 
 // By Clicking static blog content End
+
+
+//Api call for news content start
+    import appendNews from "../components/appendnews.js";
+    import apiCall from "../components/apicall.js";
+
+    //let bloglink = "https://newsapi.org/v2/top-headlines?country=in&category=sports&pageSize=10&apiKey=b140754e118c4b63a8e580772d4446a1";
+    let response = apiCall(bloglink);
+    response.then((res)=>{
+        console.log(res.articles);
+        let appendlocation = document.querySelector(".dynamic-news");
+        appendNews(res.articles, appendlocation);
+
+    })
+    .catch((e)=>{
+        console.log(e);
+    })
+
+
+
+
+
+
+
+
+// Api call for news content end
+
+
+
+

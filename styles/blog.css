@@ -248,7 +248,7 @@
     /* Dynamic part start */
 
     .dynamic-news{
-        border: 1px solid black;
+        border: 1px solid transparent;
         min-height: 70px;
         display: grid;
         grid-template-columns: 45.5% 45.5%;
@@ -257,6 +257,7 @@
         row-gap: 28px;
     }
 
+    /* News Box */
     .dynamic-news>div{
         height: 292px;
         border: 1px solid black;
