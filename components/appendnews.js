@@ -6,6 +6,10 @@
 
             let {title , description, url,urlToImage, publishedAt } = el;
 
+            if(title == null || description == null || urlToImage == null || publishedAt == null){
+                return false;
+            }
+
             //Creating elements
             let mainDiv = document.createElement("div");
             let imgDiv = document.createElement("div");
