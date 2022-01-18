@@ -9,7 +9,7 @@
         min-height: 99vh;
         border: none;
         background-color: #FEFEFF;
-        width: 71%;
+        width: 75%;
         margin: auto;
     }
 
@@ -82,8 +82,8 @@
         color: #A19C99;
         font-size: 13px;
         position: absolute;
-        top: 20px;
-        right: 17%;
+        top: 19px;
+        right: 15%;
     }
 
 
@@ -94,8 +94,17 @@
 /* === Banner Start === */
     .banner{
         height: 143px;
-        border: 1px solid black;
+        border: none;
         background-color: #FEFEFF;
+        padding-left: 25px;
+        padding-right: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .banner> img{
+        height: 100%;
     }
 
 /* === Banner End === */
@@ -104,6 +113,7 @@
     .navbar{
         height: 45px;
         background-color: #efefef;
+        
     }
 
     #mainblog{
