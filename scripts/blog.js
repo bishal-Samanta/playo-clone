@@ -50,7 +50,7 @@
     import appendNews from "../components/appendnews.js";
     import apiCall from "../components/apicall.js";
 
-    //let bloglink = "https://newsapi.org/v2/top-headlines?country=in&category=sports&pageSize=10&apiKey=b140754e118c4b63a8e580772d4446a1";
+    let bloglink = "https://newsapi.org/v2/top-headlines?country=in&category=sports&pageSize=10&apiKey=b140754e118c4b63a8e580772d4446a1";
     let response = apiCall(bloglink);
     response.then((res)=>{
         console.log(res.articles);
@@ -61,12 +61,6 @@
     .catch((e)=>{
         console.log(e);
     })
-
-
-
-
-
-
 
 
 // Api call for news content end

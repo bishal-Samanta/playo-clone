@@ -180,7 +180,7 @@
     /* Static news part start */
     .static-news{
         height: 355px;
-        border: 1px solid teal;
+        border: 1px solid transparent;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -260,18 +260,21 @@
     /* News Box */
     .dynamic-news>div{
         height: 292px;
-        border: 1px solid black;
+        border: 1px solid transparent;
     }
+
     .dynamic-news>div>div:nth-child(1){
         height: 160px;
     }
 
+    /* Image  */
     .dynamic-news>div>div:nth-child(1)>img{
         height: 160px;
         width: 100%;
         margin-bottom: 0px;
     }
 
+    /* Date Div */
     .dynamic-news>div>div:nth-child(2){
         border: 1px solid transparent;
         margin-top: 0px;
@@ -284,6 +287,8 @@
         background-color: #f2f2f2;
     }
 
+
+    /* Title div */
     .dynamic-news>div>div:nth-child(3){
         height: 36px;
         margin-top: 5px;
@@ -300,6 +305,8 @@
     .dynamic-news>div>div:nth-child(3):hover{
         text-decoration: underline;
     }
+
+    /* Content Div */
 
     .dynamic-news>div>div:nth-child(4){
         height: 44px;
