@@ -112,32 +112,50 @@ body{
     margin-top: 24px;
     display: flex;
     gap: 2%;
-    /* border: 1px solid red; */
 }
 
 #left_div{
     width: 70%;
-    /* border: 1px solid green; */
 }
 
 #right_div{
     width: 28%;
-    border: 1px solid green;
 }
 
 #safehygiene{
+    box-sizing: border-box;
+    /* padding: 5px; */
+    /* background: #00f; */
     border: 0.5px solid gray;
     width: 100%;
     height: 125px;
     border-radius: 4px;
     margin-bottom: 18px;
+    letter-spacing: 1px;
+}
+
+.greendivtop{
+    width: 126px;
+    height: 5px;
+    background-color: #558b2f;
+    position: absolute;
+    right: 32.1%;
+    border-top-right-radius: 10px;
+
+}
+
+.greendivbottom{
+    width: 126px;
+    height: 5px;
+    background-color: #558b2f;
+    position: absolute;
+    bottom: -23%;
+    border-bottom-left-radius: 10px;
 }
 
 #secondDiv{
     display: flex;
-    /* gap: 20px; */
     letter-spacing: 1px;
-    /* border: 1px solid red; */
 }
 
 #secondDiv div{
@@ -243,6 +261,36 @@ p{
     color: #939393;
 }
 
+#timing{
+    box-sizing: border-box;
+    padding-top: 22px;
+    width: 100%;
+    height: 95px;
+    margin-bottom: 23px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+#location{
+    box-sizing: border-box;
+    padding-top: 20px;
+    border-radius: 4px;
+    width: 100%;
+    height: 385px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+}
+
+#address{
+    width: 88%;
+    margin: auto;
+    font-size: 15px;
+    font-family: Lato, "Open Sans", sans-serif;
+    font-weight: 300;
+    color: #424242;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
 
 #footer{
     width: 100%;
