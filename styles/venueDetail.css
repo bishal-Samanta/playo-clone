@@ -133,6 +133,31 @@ body{
     margin-bottom: 18px;
 }
 
+#secondDiv{
+    display: flex;
+    gap: 20px;
+    letter-spacing: 1px;
+    border: 1px solid red;
+}
+
+#secondDiv div{
+    
+    border: 1px solid green;
+}
+.text{
+    margin: 0;
+    padding: 0;
+    font-family: Lato, "Open Sans", sans-serif;
+    color: #424242;
+    font-size: 11px;
+}
+
+.safeicon{
+    position: relative;
+    width: 40%;
+    margin-left: 23%;
+}
+
 #sportsavailable{
     border: 0.5px solid rgb(128,128,128, 0.5);
     width: 100%;
@@ -167,7 +192,6 @@ body{
     height: 207px;
     border-radius: 4px;
     margin-bottom: 18px;
-    /* text-align: center; */
 }
 
 #amenties_text{
@@ -217,30 +241,6 @@ p{
     letter-spacing: 0.5px;
     color: #939393;
 }
-
-#secondDiv{
-    display: flex;
-    /* border: 1px solid red; */
-}
-
-#secondDiv div{
-    
-    border: 1px solid green;
-}
-.text{
-    margin: 0;
-    padding: 0;
-    font-family: Lato, "Open Sans", sans-serif;
-    color: #424242;
-    font-size: 11px;
-}
-
-.safeicon{
-    position: relative;
-    width: 40%;
-}
-
-
 
 
 #footer{
