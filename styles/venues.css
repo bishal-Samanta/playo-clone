@@ -136,3 +136,60 @@
 
 
 /* Main body End */
+
+
+
+/* Append Search Results Div start */
+
+    #show-results-div{
+        max-height: 260px;
+        background-color: #FFFFFF;
+        width: 50%;
+        margin: auto;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 2px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+        overflow: scroll;
+        visibility: hidden;
+       
+    }
+
+    #show-results-div::-webkit-scrollbar { width: 0 !important }
+
+    #show-results-div>div{
+        height: 50px;
+        border: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 15px;
+    }
+
+    #show-results-div>div>img{
+        width: 20px;
+        height: 20px;
+        margin-right: 7px;
+    }
+
+    #show-results-div>div>span:nth-child(2){
+        font-family: "Lato", "Open Sans", sans-serif;
+        color: #424242;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        margin-right: 5px;
+    }
+
+    #show-results-div>div>span:nth-child(3){
+        font-family: "Lato", "Open Sans", sans-serif;
+        font-size: 11px;
+        letter-spacing: 0.5px;
+        margin-top: 4px;
+        border: 1px solid transparent;
+        height: 17px;
+        overflow: hidden;
+        padding-right: 15px;
+        box-sizing: border-box;
+    }
+
+
+/* Append Search Results Div End */
