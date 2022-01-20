@@ -1,0 +1,195 @@
+
+    body{
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+    /* Navbar start */
+    #navbar{
+        height: 66px;
+        background-color: #FEFFFE;
+        width: 100%;
+    }
+
+     /* Navbar End */
+
+/* Main body start */
+
+     #main{
+        background-image: url("https://playo-website.gumlet.net/booking/bg-venues.png?auto=format,compress");
+        min-height: 111vh;
+        object-fit: cover;
+        width: 100%;
+        z-index: -1;
+        background-size: 100%;
+      
+     }
+
+     /* Headline start */
+     .text-headline{
+         height: 46px;
+         z-index: 5;
+         margin-top: 119px;
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .text-headline > span:nth-child(1){
+        font-family: "Lato", "Open Sans", sans-serif;
+        font-size: 36px;
+        letter-spacing: 0.5px;
+        line-height: 46.8px;
+        color: white;
+        margin-right: 7px;
+        font-weight: 300;
+     } 
+     .text-headline > span:nth-child(2){
+        font-family: "Lato", "Open Sans", sans-serif;
+        font-size: 36px;
+        letter-spacing: 0.5px;
+        line-height: 46.8px;
+        color: #ffff00;
+        margin-right: 7px;
+        font-weight: 700;
+        font-style: italic;
+        
+    } 
+    .text-headline > span:nth-child(3){
+        font-family: "Lato", "Open Sans", sans-serif;
+        font-size: 36px;
+        letter-spacing: 0.5px;
+        line-height: 46.8px;
+        color: white;
+        font-weight: 300;
+    } 
+
+    /* Headline End */
+    
+
+    /* Input div start */
+
+    .input-div{
+        margin-top: 32px;
+        height: 50px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /* Input box */
+    #search{
+        height: 50px;
+        width: 50%;
+        padding-left: 49px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 2px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        border-radius: 2px;
+        border: none;
+        box-sizing: border-box;
+        color: #2A2E37;
+    }
+
+    #search::placeholder{
+        color: #E9E0E4;
+        
+    }
+
+    #search:focus{
+        outline: none;
+    }
+
+    /* Search Icon */
+    .search-icon{
+        position: absolute;
+        width: 17px;
+        left: 26%;
+        top: 16px;
+       
+    }
+
+    /* Search Location */
+    .find-me{
+        position: absolute;
+        width: 16px;
+        right: 32.5%;
+        top: 16.5px;
+        cursor: pointer;
+    }
+
+    /* Locate me text */
+    .locate-me-text{
+        position: absolute;
+        font-family: "Lato", "Open Sans", sans-serif;
+        line-height: normal;
+        letter-spacing: 0.5px;
+        font-size: 15px;
+        color: #939393;
+        right: 27%;
+        cursor: pointer;
+    }
+
+
+    /* Input div End*/
+
+
+
+/* Main body End */
+
+
+
+/* Append Search Results Div start */
+
+    #show-results-div{
+        max-height: 260px;
+        background-color: #FFFFFF;
+        width: 50%;
+        margin: auto;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 2px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+        overflow: scroll;
+        visibility: hidden;
+       
+    }
+
+    #show-results-div::-webkit-scrollbar { width: 0 !important }
+
+    #show-results-div>div{
+        height: 50px;
+        border: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 15px;
+    }
+
+    #show-results-div>div>img{
+        width: 20px;
+        height: 20px;
+        margin-right: 7px;
+    }
+
+    #show-results-div>div>span:nth-child(2){
+        font-family: "Lato", "Open Sans", sans-serif;
+        color: #424242;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        margin-right: 5px;
+    }
+
+    #show-results-div>div>span:nth-child(3){
+        font-family: "Lato", "Open Sans", sans-serif;
+        font-size: 11px;
+        letter-spacing: 0.5px;
+        margin-top: 4px;
+        border: 1px solid transparent;
+        height: 17px;
+        overflow: hidden;
+        padding-right: 15px;
+        box-sizing: border-box;
+    }
+
+
+/* Append Search Results Div End */
