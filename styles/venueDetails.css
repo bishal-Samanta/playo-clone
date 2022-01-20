@@ -54,6 +54,7 @@
         padding: 15px;
         box-sizing:border-box;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px 0px;
+        z-index: 100;
     }
 
     .filterbox>div:nth-child(1){
@@ -196,3 +197,166 @@
 
 
      /* Banner End */
+
+
+
+
+     /* Main Body start */
+
+     #body{
+         min-height: 78vh;
+         border: 1px solid transparent;
+         padding-top: 15px;
+         
+         box-sizing: border-box;
+     }
+
+     #container{
+
+         border: 1px solid transparent;
+         width: 85%;
+         margin: auto;
+         padding-left: 39px;
+         padding-right: 39px;
+         box-sizing: border-box;
+         display: grid;
+         grid-template-columns: repeat(4, 1fr);
+         column-gap: 33px;
+         row-gap: 60px;
+         padding-bottom: 30px;
+         
+
+     }
+
+     #container > div  {
+         height: 276px;
+         border: 1px solid transparent;
+         box-shadow: rgba(87, 87, 87, 0.16) 0px 1px 4px 0px;
+         border-radius: 2px;
+         cursor: pointer;
+         position: relative;
+     }
+
+     #container > div > div:nth-child(6){
+ 
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        background-color: #558b2f;
+        color: white;
+        width: 12%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        box-sizing: border-box;
+        position: absolute;
+        top: 30px;
+        right: 35px;
+        z-index: 3;
+        border-radius: 2px;
+     }
+
+     #container > div > div:nth-child(7){
+
+        width: 25%;
+        position:absolute;
+        background-color: white;
+        right: 18px;
+        top: 60px;
+        font-size: 11px;
+        font-family: "Lato", "Open Sans", sans-serif;
+        height: 23px;
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #9C8B8D;
+
+     }
+
+     #container > div > img:nth-child(1){
+         height: 50%;
+         width: 100%;
+         border-top-right-radius: 2px;
+         border-top-left-radius: 2px;
+     }
+
+     #container > div > div:nth-child(2){
+         font-family: "Lato", "Open Sans", sans-serif;
+         font-size: 18px;
+         line-height: 22.5px;
+         letter-spacing: 0.1px;
+         color: #6e6e6e;
+         border: 1px solid transparent;
+         padding-left: 8px;
+         height: 45px;
+         overflow: hidden;
+         padding-right: 10px;
+         margin-bottom: 3px;
+
+     }
+
+     #container > div > div:nth-child(3){
+         font-family: "Lato", "Open Sans", sans-serif;
+         font-size: 15px;
+         letter-spacing: 0.5px;
+        color: #828769;
+       
+         padding-left: 8px;
+
+     }
+
+     #container > div > div:nth-child(4){
+        font-family:  "Lato", "Open Sans", sans-serif;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        font-weight: 300;
+        font-style: italic;
+        padding-left: 8px;
+        margin-top: 5px;
+     }
+
+     #container > div > div:nth-child(5){
+         display: flex;
+         flex-direction: row;
+        padding-left: 8px;
+        margin-top: 5px;
+        justify-content: space-between;
+       
+        border: 1px solid transparent;
+        align-items: center;
+     }
+
+     #container > div > div:nth-child(5)>div:nth-child(1){
+         font-family: "Lato", "Open Sans", sans-serif;
+         font-style: 14px;
+         line-height: 23.8px;
+         color: #528c2f;
+     }
+
+     #container > div > div:nth-child(5)>div:nth-child(2){
+         display: flex;
+         flex-direction: row;
+         padding-right: 20px;
+
+     }
+
+     #container > div > div:nth-child(5)>div:nth-child(2)>img{
+         height: 20px;
+         width: 20px;
+         margin-right: 2px;
+     }
+
+     #container > div > div:nth-child(5)>div:nth-child(2) > div{
+        color: #424242;
+        font-style: 15px;
+        letter-spacing: 0.5px;
+        font-family: "Lato", "Open Sans", sans-serif;
+     }
+
+
+
+     /* Main Body End */
