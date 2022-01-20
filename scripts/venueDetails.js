@@ -67,6 +67,7 @@ function displayUi(data){
         playDiv.textContent = filter_by[0];
         BookableDiv.textContent = "BOOKABLE";
         safeImg.src = iconLink;
+        safeDiv.textContent = "Safe & Hygiene";
         ratingDiv.textContent = rating;
         votesDiv.textContent = `${votesCount} votes`
 
