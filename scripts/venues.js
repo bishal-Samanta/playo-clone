@@ -124,8 +124,24 @@
         mainDiv.append(img, span1, span2)
         document.querySelector("#show-results-div").append(mainDiv);
 
+        mainDiv.addEventListener("click", ()=>{
+            window.location.href = "venueDetails.html";
+            let arr = [];
+            arr.push(el);
+            localStorage.setItem("venueDetails", JSON.stringify(arr));
+        })
+
+
+
+       
         
 
+    })
+
+    inputTag.addEventListener("keypress", (event)=>{
+        //console.log("Test");
+        window.location.href = "venueDetails.html";
+        localStorage.setItem("venueDetails", JSON.stringify(data))
     })
 
 
