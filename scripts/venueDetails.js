@@ -76,6 +76,11 @@ function displayUi(data){
         lastDiv.append(BookableDiv, CovidDiv);
         mainDiv.append(mainImg, nameDiv, locationDiv, playDiv, lastDiv, ratingDiv, votesDiv);
         document.querySelector("#container").append(mainDiv);
+
+        mainDiv.addEventListener("click", ()=>{
+            window.location.href = "venueDetail.html";
+            localStorage.setItem("singleVenueDetails", JSON.stringify(el));
+        })
         
 
 
