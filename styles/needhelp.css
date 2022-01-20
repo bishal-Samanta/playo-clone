@@ -3,6 +3,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 /* Button used to open the chat form - fixed at the bottom of the page */
 .open-button {
+  
   background-color: rgb(85,139,47);
   color: white;
   border: none;
@@ -21,15 +22,17 @@ body {font-family: Arial, Helvetica, sans-serif;}
   position: fixed;
   bottom: 0;
   right: 21px;
-  border: 1px solid #f1f1f1;
+  /* border-radius: 10px; */
+  /* border: 1px solid #f1f1f1; */
   z-index: 9;
 }
 
 /* Add styles to the form container */
 .form-container {
   max-width: 300px;
-border-radius: 20px;
+border-radius: 10px;
   background-color: white;
+  
 }
 
 /* Full-width textarea */
@@ -41,6 +44,7 @@ border-radius: 20px;
   background: #f1f1f1;
   resize: none;
   min-height: 200px;
+  
 }
 
 /* When the textarea gets focus, do something */
@@ -81,3 +85,4 @@ border-radius: 20px;
     .form-container>label{margin-left: 3%; display:block; margin-top: 10px;}
     .form-container>input{margin-left: 2%; width: 95%; height: 30px; margin-top: 10px; margin-bottom: 10px;}
   #myForm{height: 525px;}
+  #imglogoneedhelp{ border-top-left-radius: 10px; border-top-right-radius: 10px;}
