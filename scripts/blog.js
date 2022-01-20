@@ -12,23 +12,23 @@
 
 
     
-    let quoteUrl = "https://bodybuilding-quotes1.p.rapidapi.com/random-quote";
-    fetch(quoteUrl, {
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-host": "bodybuilding-quotes1.p.rapidapi.com",
-		"x-rapidapi-key": "a867a75115msh062cacb248defc3p1037f9jsnb868cbef939c"
-	}
-    })
-    .then((res)=>{
-        return res.json()
-    })
-    .then((res)=>{
-        console.log(res);
-        let quote = document.querySelector("#quote");
-        let value = res.quote;
-        quote.textContent = value;
-    })
+    // let quoteUrl = "https://bodybuilding-quotes1.p.rapidapi.com/random-quote";
+    // fetch(quoteUrl, {
+	// "method": "GET",
+	// "headers": {
+	// 	"x-rapidapi-host": "bodybuilding-quotes1.p.rapidapi.com",
+	// 	"x-rapidapi-key": "a867a75115msh062cacb248defc3p1037f9jsnb868cbef939c"
+	// }
+    // })
+    // .then((res)=>{
+    //     return res.json()
+    // })
+    // .then((res)=>{
+    //     console.log(res);
+    //     let quote = document.querySelector("#quote");
+    //     let value = res.quote;
+    //     quote.textContent = value;
+    // })
 
 
 
@@ -66,24 +66,24 @@
     import appendNews from "../components/appendnews.js";
     import apiCall from "../components/apicall.js";
 
-   function fetchNews(){
+//    function fetchNews(){
 
-     let apiKey_blog = "b140754e118c4b63a8e580772d4446a1";
-    let bloglink = `https://newsapi.org/v2/top-headlines?country=in&category=sports&pageSize=10&apiKey=${apiKey_blog}`;
-    let response = apiCall(bloglink);
-    response.then((res)=>{
-        console.log(res.articles);
-        let appendlocation = document.querySelector(".dynamic-news");
-        appendNews(res.articles, appendlocation);
+//      let apiKey_blog = "b140754e118c4b63a8e580772d4446a1";
+//     let bloglink = `https://newsapi.org/v2/top-headlines?country=in&category=sports&pageSize=10&apiKey=${apiKey_blog}`;
+//     let response = apiCall(bloglink);
+//     response.then((res)=>{
+//         console.log(res.articles);
+//         let appendlocation = document.querySelector(".dynamic-news");
+//         appendNews(res.articles, appendlocation);
 
-    })
-    .catch((e)=>{
-        console.log(e);
-    })
+//     })
+//     .catch((e)=>{
+//         console.log(e);
+//     })
 
-    }
+//     }
 
-    fetchNews()
+//     fetchNews()
     
 
 
@@ -103,18 +103,18 @@
 
 
        
-        let apiKey_health = "b140754e118c4b63a8e580772d4446a1";
-        let bloglink_health = `https://newsapi.org/v2/top-headlines?country=in&category=health&pageSize=12&apiKey=${apiKey_health}`;
-        let response_health = apiCall(bloglink_health);
-        response_health.then((res)=>{
-            console.log(res.articles);
-            let appendlocation = document.querySelector(".dynamic-news");
-            appendNews(res.articles, appendlocation);
-        })
-        .catch((e)=>{
-            console.log(e);
+        // let apiKey_health = "b140754e118c4b63a8e580772d4446a1";
+        // let bloglink_health = `https://newsapi.org/v2/top-headlines?country=in&category=health&pageSize=12&apiKey=${apiKey_health}`;
+        // let response_health = apiCall(bloglink_health);
+        // response_health.then((res)=>{
+        //     console.log(res.articles);
+        //     let appendlocation = document.querySelector(".dynamic-news");
+        //     appendNews(res.articles, appendlocation);
+        // })
+        // .catch((e)=>{
+        //     console.log(e);
             
-        })
+        // })
 
     })
 
@@ -174,21 +174,21 @@
         //https://newsapi.org/v2/everything?q=Apple&from=2022-01-18&sortBy=popularity&apiKey=API_KEY
      
         console.log("test")
-        let search_key = "b140754e118c4b63a8e580772d4446a1";
-        let search_link = `https://newsapi.org/v2/everything?q=${value}&from=2022-01-18&sortBy=popularity&pageSize=10&language=en&apiKey=${search_key}`;
-        let response_search = apiCall(search_link);
-        response_search.then((res)=>{
-            console.log(res.articles);
-            let appendlocation = document.querySelector(".dynamic-news");
-            appendNews(res.articles, appendlocation);
-        })
-        .catch((e)=>{
-            console.log(e);
-        })
+        // let search_key = "b140754e118c4b63a8e580772d4446a1";
+        // let search_link = `https://newsapi.org/v2/everything?q=${value}&from=2022-01-18&sortBy=popularity&pageSize=10&language=en&apiKey=${search_key}`;
+        // let response_search = apiCall(search_link);
+        // response_search.then((res)=>{
+        //     console.log(res.articles);
+        //     let appendlocation = document.querySelector(".dynamic-news");
+        //     appendNews(res.articles, appendlocation);
+        // })
+        // .catch((e)=>{
+        //     console.log(e);
+        // })
 
-        console.log("Test")
+        // console.log("Test")
 
-        }
+        // }
 
     })
 
