@@ -25,14 +25,18 @@
         <div id="image_div">
 
             <div id="booknow_div">
-                <!-- <h1>South United Football Club</h1>
-                <h2>RBANM's ground</h2>
-                <p>4.6 (11 vote)</p> 
-                <span><a href="/">Rate venue</a></span> 
+                <h2 id="name" style="margin: 7.8% 0 0 7.8%; padding: 0; font-size: 28px;"></h2>
+                <h2 id="ground_name" style="font-style: italic; font-size: 19.5px; line-height: 33px; font-weight: 700; margin: 5% 7%; "></h2>
+
+                <div id="rate_div">
+                    <p id="rate" style="margin: -0.5% 0 0 9.5%; padding: 0; font-size: 22px; font-weight: bold;"></p> 
+                    <p style="margin: -0.5% 0 0 10%; font-size: 21px; padding: 0;" >( <span id="rateCount"></span> Votes )</p>
+                    <a href="/" style="text-decoration: none; margin: -0.5% 0 0 9.5%;"><p style="margin: 0; font-size: 18px; text-decoration: underline; padding: 0; color: white;">Rate venue</p></a>
+                </div>
 
                 <div style="text-align: center;">
-                    <button id="booknow_btn">Book Now</button>
-                </div> -->
+                    <button id="booknow_btn" style="font-size: 18px; font-weight: 600;">Book Now</button>
+                </div> 
             </div>
             
             <div id="mask">
@@ -182,8 +186,11 @@
                     </div>
                 </div>
 
+                <!-- share button -->
                 <button id="share_btn">Share</button>
-                <button id="booknow_btn" style="margin-left: -8px; font-size: 18px; font-weight: 600;">Book Now</button>
+
+                <!-- book now button -->
+                <button id="booknow_btn2" style="margin-left: -8px; font-size: 18px; font-weight: 600;">Book Now</button>
 
             </div>
             <!-- Right Div end -->
@@ -200,15 +207,46 @@
 <script>
     let venue_arr = [
         {
-            ratingCount : 6,
-            name : "360 Football Arena",
+            name : "South United Football Club",
+            groundName : "RBANM's Ground",
             lat : 12.871859,
             lng : 77.615578,
             rating : 5,
-            icon : "https://maps.google.com/mapfiles/kml/paddle/5-lv.png",
+            ratingCount : 6,
             filter_by : "Football"
         }
     ];
+
+    let map_div = document.getElementById("map_div");
+    let clubname = document.getElementById("name");
+    let ground_name = document.getElementById("ground_name");
+    let rate = document.getElementById("rate");
+    let rateCount = document.getElementById("rateCount");
+
+
+    let clicked = "South United Football Club"
+    venue_arr.forEach((ele) => {
+        if(ele.name === clicked){
+            map_div.innerHTML = "";
+            clubname.innerHTML = "";
+            ground_name.innerHTML = "";
+            rate.innerHTML = "";
+            rateCount.innerHTML = "";
+            map_div.innerHTML = `<iframe
+                                width= "100%"
+                                height= "100%"
+                                style="border:0"
+                                loading="lazy"
+                                allowfullscreen
+                                src="https://maps.google.com/maps?q=${ele.name}&t=&z=13&ie=UTF8$iwloc=&output=embed">
+                        </iframe>`
+            clubname.innerHTML = ele.name;
+            ground_name.innerHTML = ele.groundName;  
+            rate.innerHTML = ele.rating;
+            rateCount.innerHTML = ele.ratingCount;          
+
+        }
+    })
 
 
 </script>

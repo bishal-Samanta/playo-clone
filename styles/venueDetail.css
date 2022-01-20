@@ -72,10 +72,15 @@ body{
     height: 100%;
 }
 
+#rate_div{
+    display: flex;
+    margin-bottom: 5.3%;
+}
 #booknow_div{
     position: absolute;
-    width: 30.5%;
-    height: 53%;
+    box-sizing: border-box;
+    width: 33.5%;
+    height: 61.5%;
     color: white;
     background-color: rgb(0, 0, 0, 0.4);
     border-radius: 5px;
@@ -89,7 +94,7 @@ body{
 }
 
 #booknow_btn{
-    width: 92%;
+    width: 86%;
     min-width: 357px;
     max-width: 510px;
     height: 55px;
@@ -102,6 +107,7 @@ body{
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
+    margin-left: 2%;
 
 }
 
@@ -296,7 +302,6 @@ p{
     width: 88%;
     margin: auto;
     height: 220px;
-    border: 1px solid #424242;
 
 }
 
@@ -315,6 +320,24 @@ p{
     font-weight: 600;
     cursor: pointer;
 }
+
+#booknow_btn2{
+    width: 92%;
+    min-width: 357px;
+    max-width: 510px;
+    height: 55px;
+    padding: 0;
+    background-color: #558b2f;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-family: Lato, "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
 
 
 #footer{
