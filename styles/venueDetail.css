@@ -76,6 +76,51 @@ body{
     display: flex;
     margin-bottom: 5.3%;
 }
+
+#different_ratings{
+    width: 10.5%;
+    height: 200px;
+    margin-left: -3.5%;
+    margin-top: 6%;
+    z-index: 3;
+
+    opacity: 0;
+    pointer-events: none;
+}
+
+#different_ratings.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.rating{
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.rating:hover{
+    cursor: pointer;
+}
+.box{
+    width: 95px;
+    background-color: white;
+    border-radius: 4px;
+    padding: 5px 3px;
+    margin-right: 20px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.star{
+    box-sizing: border-box;
+    background: white;
+    border-radius: 50%;
+    width: 25%;
+    height: 30px;
+
+}
 #booknow_div{
     position: absolute;
     box-sizing: border-box;

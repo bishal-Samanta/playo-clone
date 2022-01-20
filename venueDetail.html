@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles/venueDetail.css">
     <title>Venue Detail</title>
 </head>
-<body>
+<body id="bodyy">
     <div id="outermost_div">
 
         <div id="header"></div>
@@ -28,15 +28,44 @@
                 <h2 id="name" style="margin: 7.8% 0 0 7.8%; padding: 0; font-size: 28px;"></h2>
                 <h2 id="ground_name" style="font-style: italic; font-size: 19.5px; line-height: 33px; font-weight: 700; margin: 5% 7%; "></h2>
 
+                <!-- rate div start -->
                 <div id="rate_div">
                     <p id="rate" style="margin: -0.5% 0 0 9.5%; padding: 0; font-size: 22px; font-weight: bold;"></p> 
                     <p style="margin: -0.5% 0 0 10%; font-size: 21px; padding: 0;" >( <span id="rateCount"></span> Votes )</p>
-                    <a href="/" style="text-decoration: none; margin: -0.5% 0 0 9.5%;"><p style="margin: 0; font-size: 18px; text-decoration: underline; padding: 0; color: white;">Rate venue</p></a>
+                    <p id="rateVenue" style=" cursor: pointer; margin: 0; font-size: 18px; text-decoration: underline; padding: 0; color: white; margin-left: 10%;">Rate venue</p>
                 </div>
+                <!-- rate div end -->
 
                 <div style="text-align: center;">
                     <button id="booknow_btn" style="font-size: 18px; font-weight: 600;">Book Now</button>
                 </div> 
+            </div>
+
+            <div id="different_ratings">
+                <div class="rating">
+                    <div class="box">Awesome</div>
+                    <div class="star"><img width="57%" height="60%" src="https://playo-website.gumlet.net/playo_functional/Icons/favourite-31-outline-64.svg" alt="" style="margin: 7px;"></div>
+                </div>
+
+                <div class="rating">
+                    <div class="box" style="width: 70px; margin-left: 20px;">Good</div>
+                    <div class="star"><img width="57%" height="60%" src="https://playo-website.gumlet.net/playo_functional/Icons/favourite-31-outline-64.svg" alt="" style="margin: 7px;"></div>
+                </div>
+
+                <div class="rating">
+                    <div class="box" style="width: 60px; margin-left: 25px;" >Meh</div>
+                    <div class="star"><img width="57%" height="60%" src="https://playo-website.gumlet.net/playo_functional/Icons/favourite-31-outline-64.svg" alt="" style="margin: 7px;"></div>
+                </div>
+
+                <div class="rating">
+                    <div class="box" style="width: 60px; margin-left: 25px;" >Bad</div>
+                    <div class="star"><img width="57%" height="60%" src="https://playo-website.gumlet.net/playo_functional/Icons/favourite-31-outline-64.svg" alt="" style="margin: 7px;"></div>
+                </div>
+
+                <div class="rating">
+                    <div class="box">Really Bad</div>
+                    <div class="star"><img width="57%" height="60%" src="https://playo-website.gumlet.net/playo_functional/Icons/favourite-31-outline-64.svg" alt="" style="margin: 7px;"></div>
+                </div>
             </div>
             
             <div id="mask">
@@ -205,6 +234,47 @@
 </html>
 
 <script>
+
+    
+
+    let rateVenue = document.getElementById("rateVenue");
+    let different_ratings = document.getElementById("different_ratings");
+    rateVenue.addEventListener("click", ()=>{
+        different_ratings.classList.add("show")
+    })
+    
+    let count = 0;
+    document.addEventListener('click', (event)=>{
+        if(event.target) {
+            count++;
+        }
+        if(count == 2) {
+            count =0;
+            different_ratings.classList.remove("show")
+        }
+    });
+
+    // mobile page append here
+    // document.addEventListener("click", (event) => {
+    //     if (!event.target.matches('.bodyy') && event.target.matches('.different_ratings')) {
+    //         different_ratings.classList.add("");
+    //     }
+    // }, true)
+
+
+    document.addEventListener('click', (event) => {
+        if (!event.target.matches('.bodyy')) {
+            different_ratings.classList.remove("show");
+        }
+    }, true);
+
+    // document.addEventListener('click', function (event) {
+    //     if (!event.target.matches('.different_ratings')) {
+    //         // location.reload();
+    //         different_ratings.classList.add("show");
+    //     }
+    // }, false);
+
     let venue_arr = [
         {
             name : "South United Football Club",
