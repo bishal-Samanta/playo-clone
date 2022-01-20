@@ -80,6 +80,7 @@ function displayUi(data){
         mainDiv.addEventListener("click", ()=>{
             window.location.href = "venueDetail.html";
             localStorage.setItem("singleVenueDetails", JSON.stringify(el));
+            localStorage.setItem("votes", votesCount)
         })
         
 

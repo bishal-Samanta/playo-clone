@@ -131,7 +131,7 @@
                 <div id="sportsavailable">
                     <p id="amenties_text">SPORTS AVAILABLE</p> 
                     <img style="margin-left: 5%;" width="5%" src="https://playo.imgix.net/SPORTICONS/SP2/ic_football_green.png?auto=format,compress&h=70" alt="">
-                    <p style="margin-left: 5%;">Football</p>
+                    <p style="margin-left: 5%;" id="cat">Football</p>
                 </div>
 
                 <div id="additionalinfo">
@@ -237,6 +237,30 @@
 
 <script>
 
+
+    let data = JSON.parse(localStorage.getItem("singleVenueDetails"));
+    let { name, imgUrl ,rating , filter_by} = data;
+    let category = filter_by[0];
+    let vote = localStorage.getItem("votes")
+    console.log(data, category, vote)
+
+    //Append value
+    document.querySelector("#name").textContent = name;
+    document.querySelector("#ground_name").textContent = "RBANM's Ground";
+    document.querySelector("#rate").textContent = rating;
+    document.querySelector("#rateCount").textContent = vote;
+    document.querySelector("#cat").textContent = category;
+    document.querySelector("#notBlur").src = imgUrl;
+
+    map_div.innerHTML = `<iframe
+                                width= "100%"
+                                height= "100%"
+                                style="border:0"
+                                loading="lazy"
+                                allowfullscreen
+                                src="https://maps.google.com/maps?q=${name}&t=&z=13&ie=UTF8$iwloc=&output=embed">
+                        </iframe>`
+
     
 
     let rateVenue = document.getElementById("rateVenue");
@@ -256,19 +280,20 @@
         }
     });
 
-    // mobile page append here
-    // document.addEventListener("click", (event) => {
-    //     if (!event.target.matches('.bodyy') && event.target.matches('.different_ratings')) {
-    //         different_ratings.classList.add("");
-    //     }
-    // }, true)
 
-
-    document.addEventListener('click', (event) => {
-        if (!event.target.matches('.bodyy')) {
-            different_ratings.classList.remove("show");
+   // mobile page append here
+    document.addEventListener("click", (event) => {
+        if (!event.target.matches('.bodyy') && event.target.matches('.different_ratings')) {
+            different_ratings.classList.add("");
         }
-    }, true);
+    }, true)
+
+
+    // document.addEventListener('click', (event) => {
+    //     if (!event.target.matches('.bodyy')) {
+    //         different_ratings.classList.remove("show");
+    //     }
+    // }, true);
 
     // document.addEventListener('click', function (event) {
     //     if (!event.target.matches('.different_ratings')) {
@@ -277,48 +302,48 @@
     //     }
     // }, false);
 
-    let venue_arr = [
-        {
-            name : "South United Football Club",
-            groundName : "RBANM's Ground",
-            lat : 12.871859,
-            lng : 77.615578,
-            rating : 5,
-            ratingCount : 6,
-            filter_by : "Football"
-        }
-    ];
+    // let venue_arr = [
+    //     {
+    //         name : "South United Football Club",
+    //         groundName : "RBANM's Ground",
+    //         lat : 12.871859,
+    //         lng : 77.615578,
+    //         rating : 5,
+    //         ratingCount : 6,
+    //         filter_by : "Football"
+    //     }
+    // ];
 
-    let map_div = document.getElementById("map_div");
-    let clubname = document.getElementById("name");
-    let ground_name = document.getElementById("ground_name");
-    let rate = document.getElementById("rate");
-    let rateCount = document.getElementById("rateCount");
+    // let map_div = document.getElementById("map_div");
+    // let clubname = document.getElementById("name");
+    // let ground_name = document.getElementById("ground_name");
+    // let rate = document.getElementById("rate");
+    // let rateCount = document.getElementById("rateCount");
 
 
-    let clicked = "South United Football Club"
-    venue_arr.forEach((ele) => {
-        if(ele.name === clicked){
-            map_div.innerHTML = "";
-            clubname.innerHTML = "";
-            ground_name.innerHTML = "";
-            rate.innerHTML = "";
-            rateCount.innerHTML = "";
-            map_div.innerHTML = `<iframe
-                                width= "100%"
-                                height= "100%"
-                                style="border:0"
-                                loading="lazy"
-                                allowfullscreen
-                                src="https://maps.google.com/maps?q=${ele.name}&t=&z=13&ie=UTF8$iwloc=&output=embed">
-                        </iframe>`
-            clubname.innerHTML = ele.name;
-            ground_name.innerHTML = ele.groundName;  
-            rate.innerHTML = ele.rating;
-            rateCount.innerHTML = ele.ratingCount;          
+    // let clicked = "South United Football Club"
+    // venue_arr.forEach((ele) => {
+    //     if(ele.name === clicked){
+    //         map_div.innerHTML = "";
+    //         clubname.innerHTML = "";
+    //         ground_name.innerHTML = "";
+    //         rate.innerHTML = "";
+    //         rateCount.innerHTML = "";
+    //         map_div.innerHTML = `<iframe
+    //                             width= "100%"
+    //                             height= "100%"
+    //                             style="border:0"
+    //                             loading="lazy"
+    //                             allowfullscreen
+    //                             src="https://maps.google.com/maps?q=${ele.name}&t=&z=13&ie=UTF8$iwloc=&output=embed">
+    //                     </iframe>`
+    //         clubname.innerHTML = ele.name;
+    //         ground_name.innerHTML = ele.groundName;  
+    //         rate.innerHTML = ele.rating;
+    //         rateCount.innerHTML = ele.ratingCount;          
 
-        }
-    })
+    //     }
+    // })
 
 
 </script>
