@@ -272,6 +272,10 @@ var costvalue;
 function plus()
 {
     count++;
+    if(count >5){
+        alert("We Dont offer More than 5 hrs");
+        return false;
+    }
     let plus= document.getElementById("plus");
     plus.style.backgroundColor = "#4daa0b";
     plus.style.color = "white";
@@ -287,7 +291,14 @@ function plus()
 
 function minus(costvalue)
 {
+    
     count--;
+    if(count < 1){
+
+        return false
+    }
+
+    costvalue = 2200*count;
     let minus= document.getElementById("minus");
     minus.style.backgroundColor = "#4daa0b";
     minus.style.color = "white";
@@ -295,7 +306,9 @@ function minus(costvalue)
     let updatedvalue= document.getElementById("timevalue");
     updatedvalue.innerHTML= count+ " "+ "hr";
 
-    cost.innerHTML= "Total cost for these booking - INR"+" " + 4400;
+    cost.innerHTML= "Total cost for these booking - INR"+" " + costvalue;
+    //let presentValue = costvalue;
+
 
 
 }
