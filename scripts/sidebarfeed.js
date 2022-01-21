@@ -9,10 +9,10 @@ function navbarsidebar(){
     <div id="navdiv">
     <ul type="none">
         <li class="offer"><a href="#">Offer</a></li>
-        <li class="offer">Partner with us</li>
+        <li class="offer"><a href="#">Partner with us</a></li>
 
         <li>
-        <div id="#mainmenu">
+        <div id="mainmenu">
         <div id="mainm">
         <div id="top1"><img  src="https://playo-website.gumlet.net/playo_functional/Icons/user_blank.svg" height="37"/></div>
         <div><p id="mobnum">9021553726</p></div>
