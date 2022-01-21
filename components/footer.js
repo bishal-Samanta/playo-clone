@@ -18,7 +18,7 @@ function footer()
             </a>
         </div>
         <div id="copyright">
-            <p>©2022 TechMash Solutions Private Limited.<span> All Rights Reserved.</span></p>
+            <p>©2022 TechMash Solutions Private Limited.<span id="copy"> All Rights Reserved.</span></p>
         </div>
         <div id="loweritems">
             <a href=""><p>FAQs</p></a>
