@@ -1,49 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-   <link rel="stylesheet" href="./css/explore.css">
-   <link rel="stylesheet" href="./css/popup.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./styles/activities.css">
+	<link rel="stylesheet" href="./css/popup.css">
+
+	<title>Activities</title>
+
 </head>
 <body>
-    <div id="explorenavbar">
-        <div id="logodiv" ><img id="logo" src="https://playo-website.imgix.net/company/logo1.png?auto=compress,format" alt="playo logo"></div>
-        <div id="nav2div"> <img id="pplogo" src="https://playo-website.gumlet.net/playo_functional/Icons/user_blank.svg" alt=""></div>
-         <p id="myBtn" class="loginp">Login/Signup</p>
-         <img id="dropdownarrow" src="https://playo-website.gumlet.net/playo_functional/Icons/arrow_light.svg" alt="">
-       <div id="dropdowndiv">
-           <div>Profile</div>
-           <br>
-           <div>Logout</div>
-       </div>
-        </div>
-<!--    popupwindow      ------------------------------------------------------ -->
-<div id="show">
-    <!--popupwindow show here  -->
-</div>
-</div>
 
-<!--  -->
-        <div id="searchbar">
-            <input type="text" id="typesearch" placeholder="Type a city">
-            <input id="searchbtn" type="button" onclick="find()" value="Detect">
-        </div>
+	<!-- header start -->
+	<div id="header">
 
-     <div id="citynames">
-     <p>All citiies</p>
-     <hr>
-        
-     </div>
+		<div id="logodiv" >
+			<img id="logo" src="https://playo-website.imgix.net/company/logo1.png?auto=compress,format" alt="playo logo">
+		</div>
+
+		<div id="nav2div"> 
+			<img id="pplogo" src="https://playo-website.gumlet.net/playo_functional/Icons/user_blank.svg" alt="">
+			<p class="loginp" style="border: 1px solid red; ">Login / Signup</p>
+			<img id="dropdownarrow" src="https://playo-website.gumlet.net/playo_functional/Icons/arrow_light.svg" alt="">
+		</div>
+		
+		
+		
+		<div id="dropdowndiv">
+			<div>Profile</div>
+			<br>
+			<div>Logout</div>
+		</div>
+
+	</div>
+	<!-- header end -->
+
+	<!--  popupwindow -->
+	<div id="show">
+		<!--popupwindow show here  -->
+	</div>
+
+
+	<div id="searchbar">
+		<input type="text" id="typesearch" placeholder="Type a city">
+		<input id="searchbtn" type="button" onclick="find()" value="Detect">
+	</div>
+
+	<div id="citynames">
+		<p>All citiies</p>
+		
+		<hr>
+	</div>
+
+
+	<div id="footer"></div>
 </body>
 </html>
+
+
 <script type="module">
 	import getpopup from "./components/popup.js"
 	document.getElementById("show").innerHTML=getpopup();
 
-var  city_names=['Adilabad',
+	var city_names=['Adilabad',
 			'Anantapur',
 			'Chittoor',
 			'Kakinada',
@@ -527,7 +547,7 @@ var  city_names=['Adilabad',
 			'Tehri Garhwal',
 			'Udham Singh Nagar',
 			'Uttarkashi'];
-      city_names.sort((a,b)=>a-b);
+    city_names.sort((a,b)=>a-b);
       //console.log(city_names)
 
      for(var i=0; i<city_names.length; i++){
