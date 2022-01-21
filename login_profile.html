@@ -40,7 +40,7 @@
 
 
 
-let array_data = [];
+let array_data = JSON.parse(localStorage.getItem("user_profle_data")) || [];
 
 document.getElementById("save").addEventListener("click" , saveval);
 
@@ -56,6 +56,7 @@ function user_data(){
  let X = new user_data()
 
  array_data.push(X)
+ localStorage.setItem("user_profle_data" , JSON.stringify(array_data));
     console.log(array_data);
 }
 
