@@ -7,12 +7,13 @@
     <title>About us</title>
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/navbarblack.css">
     <style>
        
     </style>
 </head>
 <body>
-    <div id="navbar"></div>
+    <div id="mynavbar"></div>
     <!-- these div for about us block -->
     <div id="about_block">
         <div id="aboutus">
@@ -88,4 +89,9 @@
     import footer from "./components/footer.js";
 
     foot.innerHTML= footer();
+
+
+    let headr= document.getElementById("mynavbar");
+    import navbar from "./components/navbarblack.js";
+    headr.innerHTML= navbar();
 </script>
