@@ -11,8 +11,17 @@
 </head>
 <body>
     <!-- these div for navbar -->
-    <div id="navbar">
-
+    <div id="mynavbar">
+        <div id="navbar">
+            <div id="imgdiv">
+                <a href="index.html"><img src="https://playo-website.gumlet.net/logo/playo-logo-header-website.png?auto=compress,format&q=90" width="85%" height="60%"></a>
+            </div>
+            <div id="tabsdiv">
+                <a href="venues.html"><p>Book Venues</p></a>
+                <a href="activities.html"><p>Activities</p></a>
+                <a href="blog.html"><p>Blog</p></a>
+            </div>
+        </div>
     </div>
      <!-- these div is for main middle part of website -->
     <div id="mainbody">
@@ -122,8 +131,12 @@
 </body>
 </html>
 <script type="module">
+
+
     let foot= document.getElementById("footer");
     import footer from "./components/footer.js";
     foot.innerHTML=footer();
 
+
+   
 </script>
