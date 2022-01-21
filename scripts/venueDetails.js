@@ -2,7 +2,6 @@
 
 
 
-
 //Filter Products
 
 //On clicking appear an reappear of div
