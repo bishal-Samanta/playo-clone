@@ -5,6 +5,7 @@
   border: 1px solid transparent;
   margin-left: 400px;
   gap: 150px;
+  margin-bottom: 50px;
 }
 /* #detail{
     flex: 2;
@@ -31,6 +32,7 @@
   margin-top: 50px;
   position: fixed;
   transform: translateX(900px);
+  width: 500px;
 }
 #leftimage {
   height: 400px;

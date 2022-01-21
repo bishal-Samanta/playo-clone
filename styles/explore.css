@@ -5,6 +5,7 @@
     margin: auto;
     grid-gap: 30px 70px;
     border: 1px solid transparent;
+    margin-bottom: 50px;
   }
   #places {
     border: 1px solid transparent;
@@ -28,11 +29,11 @@
   .highlighttext {
     font-weight: bold;
     font-size: 20px;
-    line-height: 0px;
+   
   }
   .location {
     color: grey;
-    line-height: 0px;
+    
   }
   .clockicon {
     height: 30px;
