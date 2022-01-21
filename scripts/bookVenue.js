@@ -446,10 +446,23 @@ function addtocart()
 
 
    checkoutbutton.addEventListener("click", ()=>{
-       window.location.href = "pay.html";
+
+
+    let price = count*2200;
+    localStorage.setItem("finalPrice", price);
+    window.location.href = "pay.html";
+
+
    })
 
 }
+
+
+document.querySelector("#btn2").addEventListener("click", ()=>{
+    let price1 = count*2200;
+    localStorage.setItem("finalPrice", price1);
+    window.location.href = "pay.html";
+})
 
 // these for import the footer
 
