@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>customer data page</title>
+    <style>
+        body{
+            padding: 0%;
+            margin: 0%;
+        }
+        #title{
+            width:100%;
+            height:70px;
+            text-align: center;
+            background-color: rgb(5, 192, 11);
+            font-family: 'lato', sans-serif;
+            color: white;
+            font-size: 50px;
+            font-weight: bold;
+        }
+        
+        #maincontainer{
+            display: flex;
+            width:100%;
+            height:600px;
+            border: 1px solid transparent;
+        }
+
+        #leftside{
+            width:20%;
+            height:100%;
+            border: 1px solid transparent;
+        }
+        #rightside{
+            width:75%;
+            height:100%;
+            margin-left: 5%;
+            border: 1px solid transparent;
+        }
+        .btn{
+            margin: auto;
+            width:70%;
+            height: 10%;
+            margin-top: 5%;
+            margin-left: 15%;
+            border: 2px solid rgb(172, 171, 171);
+            background-color: rgb(5, 192, 11);
+            color: white;
+           font-size: 15px;
+           font-family: 'lato'sans-serif;
+        }
+        .btn:hover{
+            background-color: white;
+            color: rgb(5, 192, 11);
+            border: 2px solid rgb(5, 192, 11);
+        }
+        table{
+            margin-top: 20px;
+        }
+        th{
+           width:20%;
+           height: 30px;
+           border: 1px solid gray; 
+           background-color:rgb(5, 192, 11);
+           color: white;
+        }
+        td{
+           width:20%;
+           height: 20px;
+           border: 1px solid gray; 
+           
+        }
+    </style>
+</head>
+<body>
+    <div id="title">
+        PLAYO ADMIN PAGE
+    </div>
+    <div id="maincontainer">
+        <div id="leftside">
+            <a href="customerdata.html"><button id="customer" class="btn", onclick="">Customer data</button></a>;
+            <a href="admin.html"><button id="addvenue" class="btn"> Add Venue</button></a>
+            <a href="currentbook.html"><button id="currentbooking" class="btn">Current Bookings </button></a>
+            <a href="pastbook.html"><button id="pastbooking" class="btn">Past Bookings</button></a>
+        </div>
+        <div id="rightside">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone Number</th>
+                        <th>Address</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Abhishek Vasant Satpute</td>
+                        <td>abhishek@gmail.com</td>
+                        <td>9988776655</td>
+                        <td>Ganesh Vihar, Maldad road, Sangamaner </td>
+                    </tr>
+                    <tr>
+                        <td>Bishal Samant</td>
+                        <td>samantbishal@gmail.com</td>
+                        <td>8967455667</td>
+                        <td>Gandhi Road, Ahmadabad</td>
+                    </tr>
+                    <tr>
+                        <td>Michael Lawson</td>
+                        <td>michael.lawson@gmail.com</td>
+                        <td>5678890987</td>
+                        <td>chirch Gate, west hoven, USA</td>
+                    </tr>
+                    <tr>
+                        <td>Lindsay Ferguson</td>
+                        <td>lindsay.ferguson@gmail.com</td>
+                        <td>9876543234</td>
+                        <td>Davestad, lake side, Alberto Turnpike,Greneda</td>
+                    </tr>
+                    <tr>
+                        <td>Tobis Funke</td>
+                        <td>tobisfunkey@gmial.com</td>
+                        <td>6785643524</td>
+                        <td>New Nicolas,Romaguera Circle, Birk</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+        </div>
+    </div>
+</body>
+</html>

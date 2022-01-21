@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin page</title>
+    <style>
+        body{
+            padding: 0%;
+            margin: 0%;
+        }
+        #title{
+            width:100%;
+            height:70px;
+            text-align: center;
+            background-color: rgb(5, 192, 11);
+            font-family: 'lato', sans-serif;
+            color: white;
+            font-size: 50px;
+            font-weight: bold;
+        }
+        
+        #maincontainer{
+            display: flex;
+            width:100%;
+            height:600px;
+            border: 1px solid transparent;
+        }
+
+        #leftside{
+            width:20%;
+            height:100%;
+            border: 1px solid transparent;
+        }
+        #rightside{
+            width:75%;
+            height:100%;
+            margin-left: 5%;
+            border: 1px solid transparent;
+        }
+        .btn{
+            margin: auto;
+            width:70%;
+            height: 10%;
+            margin-top: 5%;
+            margin-left: 15%;
+            border: 2px solid rgb(172, 171, 171);
+            background-color: rgb(5, 192, 11);
+            color: white;
+           font-size: 15px;
+           font-family: 'lato'sans-serif;
+        }
+        .btn:hover{
+            background-color: white;
+            color: rgb(5, 192, 11);
+            border: 2px solid rgb(5, 192, 11);
+        }
+        #addvenuedetails{
+            width:70%;
+            height:100%;
+            border: 1px solid green;
+            padding-left: 3%;
+        }
+        h2{
+            color: gray;
+            font-family: 'lato', sans-serif;
+            margin-left: 3%;
+        }
+        .entries{
+            line-height: 0%;
+            margin-block-end: 0%;
+            color: rgb(88, 87, 87);
+            font-family: 'lato', sans-serif;
+            font-size: 18px;
+        }
+        input{
+            width:70%;
+            height:5%;
+            border: 1px solid green;
+            border-radius: 5px;
+            margin-bottom: 1%;
+        }
+        #addme{
+            width:20%;
+            height:8%;
+            margin-top: 2%;
+            background-color: rgb(5, 192, 11);
+            color: white;
+        }
+        #addme:hover{
+            background-color: white;
+            color: rgb(5, 192, 11);
+            border: 2px solid rgb(5, 192, 11);
+        }
+    </style>
+</head>
+<body>
+    <div id="title">
+        PLAYO ADMIN PAGE
+    </div>
+    <div id="maincontainer">
+        <div id="leftside">
+            <a href="customerdata.html"><button id="customer" class="btn", onclick="">Customer data</button></a>;
+            <a href="admin.html"><button id="addvenue" class="btn"> Add Venue</button></a>
+            <a href="currentbook.html"><button id="currentbooking" class="btn">Current Bookings </button></a>
+            <a href="pastbook.html"><button id="pastbooking" class="btn">Past Bookings</button></a>
+        </div>
+        <div id="rightside">
+            
+            <div id="addvenuedetails">
+                <h2>Add Venue</h2>
+                <p class="entries">Enter venue name:</p><br>
+                <input type="text" id="name" placeholder="enter venu name"> 
+                <p class="entries">Enter venue Address:</p><br>
+                <input type="text" id="address" placeholder="enter address">
+                <p class="entries">Sport:</p><br>
+                <input type="text" id="sportname" placeholder="enter sport name">
+                <p class="entries">Owner name</p><br>
+                <input type="text" id="owner" placeholder="enter owner name">
+                <p class="entries">Open Time:</p><br>
+                <input type="text" id="opentime" placeholder="enter open time">
+                <p class="entries">Close Time:</p><br>
+                <input type="text" id="closetime" placeholder="enter close time"><br>
+                <button id="addme">Add Venue</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    
+    
+</script>
