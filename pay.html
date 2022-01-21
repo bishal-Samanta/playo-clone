@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            background-color: #EEEFEF;
+        }
+        #rzp-button1{
+            width: 200px;
+            height: 50px;
+            background-color: #679F00;
+            border: 1px solid white;
+            border-radius: 2px;
+            color: white;
+            margin-top: 50px;
+           
+        }
+    </style>
+</head>
+<body>
+    <button id="rzp-button1">Pay</button>
+</body>
+</html>
+
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+
+    let price = localStorage.getItem("finalPrice") * 100
+
+
+    var options = {
+        "key": "rzp_test_VhRZKygRJUvXe9", // Enter the Key ID generated from the Dashboard
+        "amount": price, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+        "currency": "INR",
+        "name": "Playo",
+        "description": "Test Payment",
+        "image": "https://blog.playo.co/wp-content/uploads/2018/04/Playo-dp-gradient4-1.png",
+        // "order_id": "order_Ef80WJDPBmAeNt", //Pass the `id` obtained in the previous step
+        // "account_id": "acc_Ef7ArAsdU5t0XL",
+        "handler": function (response){
+            alert(response.razorpay_payment_id);
+            alert(response.razorpay_order_id);
+            alert(response.razorpay_signature)
+        }
+    };
+    var rzp1 = new Razorpay(options);
+    document.getElementById('rzp-button1').onclick = function(e){
+        rzp1.open();
+        e.preventDefault();
+    }
+</script>
