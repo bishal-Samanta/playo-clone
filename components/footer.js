@@ -1,5 +1,5 @@
 
-// yo can find css for these footer file here="style/footer.css".
+// you can find css for these footer file here="style/footer.css".
 // you have to simply link that stylesheet in your heading part
 // for these file make one footer with id="footer" and make innerHtml for imported function
 function footer()
@@ -18,14 +18,14 @@ function footer()
             </a>
         </div>
         <div id="copyright">
-            <p>©2022 TechMash Solutions Private Limited.<span> All Rights Reserved.</span></p>
+            <p>©2022 TechMash Solutions Private Limited.<span id="allrights"> All Rights Reserved.</span></p>
         </div>
         <div id="loweritems">
             <a href="faq.html"><p>FAQs</p></a>
             <a href="https://playo.co/privacy"><p>Privacy Policy</p></a>
             <a href="https://playo.co/terms"><p>Terms of Service</p></a>
             <a href="https://playo.co/cancellation-refund"><p>Cancellation & Refund Policy</p></a>
-            <a href="https://playo.co/careers"><div style="display:flex; gap:5px; "><p>Careers</p><p id="hiring">We're Hiring!</p></div></a>
+            <a href="https://playo.co/careers"><div style="display:flex; gap:5px; "><p>Careers</p><p id="hiring">We're hiring!</p></div></a>
             
         </div>
     </div>
