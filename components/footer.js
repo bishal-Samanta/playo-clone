@@ -31,9 +31,9 @@ function footer()
     </div>
     <div id="div2">
         <a href="about.html"><p>About Us</p></a>
-        <a href=""><p>Partner With Us</p></a>
-        <a href=""><p>Brand Activations</p></a>
-        <a href=""><p>Corporate Offerings</p></a>
+        <a href="https://playo.co/partner-with-us"><p>Partner With Us</p></a>
+        <a href="https://playo.co/brand-activations"><p>Brand Activations</p></a>
+        <a href="https://playo.co/corporate-offerings"><p>Corporate Offerings</p></a>
         <a href="contact.html"><p>contact Us</p></a>
     </div>
     <div id="div3">

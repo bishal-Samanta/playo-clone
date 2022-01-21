@@ -29,6 +29,10 @@ a{
     line-height: 12px;
     font-family: Lato, sans-serif;
 }
+
+#div2 p:hover{
+    text-decoration: underline;
+}
 #div3{
     width:10%;
     height:90%;
@@ -39,6 +43,10 @@ a{
     line-height: 12px;
     font-family: Lato, sans-serif;
 }
+
+#div3 p:hover{
+    text-decoration: underline;
+}
 #div4{
     width:10%;
     height:90%;
@@ -48,6 +56,9 @@ a{
     font-size: 14px;
     line-height: 12px;
     font-family: Lato, sans-serif;
+}
+#div4 p:hover{
+    text-decoration: underline;
 }
 
 /* these css designs for left side logo and links below it */
