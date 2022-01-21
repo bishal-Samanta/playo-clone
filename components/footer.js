@@ -1,7 +1,3 @@
-
-// yo can find css for these footer file here="style/footer.css".
-// you have to simply link that stylesheet in your heading part
-// for these file make one footer with id="footer" and make innerHtml for imported function
 function footer()
 {
     return `<div id="infooter">
@@ -21,7 +17,7 @@ function footer()
             <p>©2022 TechMash Solutions Private Limited.<span> All Rights Reserved.</span></p>
         </div>
         <div id="loweritems">
-            <a href=""><p>FAQs</p></a>
+            <a href="faq.html"><p>FAQs</p></a>
             <a href=""><p>Privacy POlicy</p></a>
             <a href=""><p>Terms Of Service</p></a>
             <a href=""><p>Cancellation & Refund Policy</p></a>
@@ -37,10 +33,10 @@ function footer()
         <a href="contact.html"><p>contact Us</p></a>
     </div>
     <div id="div3">
-        <a href=""><p>Book Venues</p></a>
-        <a href=""><p>Activities</p></a>
-        <a href=""><p>Blog</p></a>
-        <a href=""><p>FAQ's</p></a>
+        <a href="venues.html"><p>Book Venues</p></a>
+        <a href="activities.html"><p>Activities</p></a>
+        <a href="blog.html"><p>Blog</p></a>
+        <a href="faq.html"><p>FAQ's</p></a>
     </div>
     <div id="div4">
         <a href="https://www.facebook.com/PlayoApp/"><p>Facebook</p></a>
