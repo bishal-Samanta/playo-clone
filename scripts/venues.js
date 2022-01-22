@@ -42,6 +42,15 @@ document.querySelector("#sendOTP").addEventListener("click", ()=>{
                 // alert("success");
                 modal_container.classList.remove("show")
                 document.querySelector("#myBtn").textContent = mobNo;
+                localStorage.setItem("login", true);
+
+
+                open.addEventListener("click", ()=>{
+                    modal_container.classList.remove("show")
+                    window.location.href = "login_profile.html";
+                })
+
+
             }
             else{
                 alert("Wrong OTP");
