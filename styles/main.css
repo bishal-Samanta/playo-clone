@@ -297,15 +297,16 @@ height: 70px;
     display: none;
     
  }
- #navdiv ul li:hover #menu{
+ #navdiv ul li #menu{
     box-shadow: 0 1px 6px rgb(0 0 0 / 21%);
     width: 200px ;
-    display: block;
     position: absolute;
    font-size: 18px;
    height: 90px;
    font-size: 18px;
    line-height: 40px;
+   margin-top: 10px;
+   background-color: white;
 }
   #menu ul {
     display: block;
