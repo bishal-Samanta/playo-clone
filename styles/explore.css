@@ -6,6 +6,7 @@
     grid-gap: 30px 70px;
     border: 1px solid transparent;
     margin-bottom: 50px;
+    min-height: 80vh;
   }
   #places {
     border: 1px solid transparent;
