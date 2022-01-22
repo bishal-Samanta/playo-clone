@@ -5,6 +5,18 @@ body{
    box-sizing: border-box;
 }
 
+#typesearch:focus{
+   outline: none;
+}
+
+
+#searchbtn:hover{
+   background-color: rgb(235, 235, 235);
+   cursor: pointer;
+}
+
+
+
 #logo{ width: 100px; height: 45px; margin-left: 10px;}
 #pplogo{width: 35px; height: 35px;}
 #explorenavbar{display: flex; padding-top: 10px; height: 40px; box-shadow: rgba(0, 0, 0, 0.185) 0px 3px 5px;
