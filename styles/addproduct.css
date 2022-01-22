@@ -1,0 +1,51 @@
+body {
+  background-color: black;
+  
+}
+#main {
+  display: flex;
+  gap: 50px;
+  margin: auto;
+
+
+
+}
+#add {
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 200px;
+  color: black;
+}
+#update {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+input{
+    padding: 5px;
+    font-size: 20px;
+    color: black;
+}
+:hover>input{
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+button{
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+    background-color: black;
+   border: 1px solid white;
+
+}
+:hover>button{
+  background-color: white;
+  color:black
+}
+#addbtn{
+  margin-top: 25px;
+}

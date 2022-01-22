@@ -5,57 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/addproduct.css">
   </head>
   <body>
     <!-- to add items into the server. -->
-    <input type="img" placeholder="img" id="image" />
-    <input type="text" placeholder="city name" id="city" />
-    <input type="text" placeholder="name" id="name" required />
-    <input
-      type="text"
-      placeholder="location name"
-      id="location-name"
-      required
-    />
-    <input type="text" placeholder="timing" id="timing" />
-    <input type="text" placeholder="image2" id="image2" />
-    <input type="text" placeholder="overview" id="overview" />
-    <input type="text" placeholder="goals" id="goals" />
-    <input type="text" placeholder="services" id="services" />
-    <input type="text" placeholder="infrastructure" id="infra" />
-    <input type="text" placeholder="address" id="address" />
-    <!-- <input type="number" placeholder="id" id="id" required> -->
+    <div id="main">
+      <div id="add">
+        <input type="img" placeholder="img" id="image" />
+        <input type="text" placeholder="city name" id="city" />
+        <input type="text" placeholder="name" id="name" required />
+        <input
+          type="text"
+          placeholder="location name"
+          id="location-name"
+          required
+        />
+        <input type="text" placeholder="timing" id="timing" />
+        <input type="text" placeholder="image2" id="image2" />
+        <input type="text" placeholder="overview" id="overview" />
+        <input type="text" placeholder="goals" id="goals" />
+        <input type="text" placeholder="services" id="services" />
+        <input type="text" placeholder="infrastructure" id="infra" />
+        <input type="text" placeholder="address" id="address" />
+        <!-- <input type="number" placeholder="id" id="id" required> -->
+        <br><br><br>
+        <button onclick="addproduct()" id="addbtn">Add Data</button>
 
-    <button onclick="addproduct()">add data</button>
-
-    <br /><br />
-    <!-- to update the server -->
-    <input type="text" placeholder="id" id="id" />
-    <input type="img" placeholder="img" id="uimage" />
-    <input type="text" placeholder="city name" id="ucity" />
-    <input type="text" placeholder="name" id="uname" required />
-    <input
-      type="text"
-      placeholder="location name"
-      id="ulocation-name"
-      required
-    />
-    <input type="text" placeholder="timing" id="utiming" />
-    <input type="text" placeholder="image2" id="uimage2" />
-    <input type="text" placeholder="overview" id="uoverview" />
-    <input type="text" placeholder="goals" id="ugoals" />
-    <input type="text" placeholder="services" id="uservices" />
-    <input type="text" placeholder="infrastructure" id="uinfra" />
-    <input type="text" placeholder="address" id="uaddress" />
-    <!-- <input type="number" placeholder="id" id="id" required> -->
-
-    <button onclick="update()">update data</button>
+      </div>
+      
+      <!-- to update the server -->
+      <div id="update">
+        <input type="number" placeholder="id" id="id" required/>
+        <input type="img" placeholder="img" id="uimage" />
+        <input type="text" placeholder="city name" id="ucity" />
+        <input type="text" placeholder="name" id="uname" required />
+        <input
+          type="text"
+          placeholder="location name"
+          id="ulocation-name"
+          required
+        />
+        <input type="text" placeholder="timing" id="utiming"  />
+        <input type="text" placeholder="image2" id="uimage2" />
+        <input type="text" placeholder="overview" id="uoverview" />
+        <input type="text" placeholder="goals" id="ugoals" />
+        <input type="text" placeholder="services" id="uservices" />
+        <input type="text" placeholder="infrastructure" id="uinfra" />
+        <input type="text" placeholder="address" id="uaddress" />
+        <!-- <input type="number" placeholder="id" id="id" required> -->
+        <br><br>
+        <button onclick="update()">Update Data</button>
+      </div>
+    </div>
 
     <div id="con"></div>
     <br /><br />
 
     <!-- use this input to go to explore.html -->
-    <div>
+    <!-- <div>
       <input
         type="text"
         id="cities"
@@ -63,7 +70,7 @@
         required
       />
       <button onclick="city()">Detect</button>
-    </div>
+    </div> -->
   </body>
 </html>
 <script>
@@ -129,6 +136,7 @@
 
       let d = await response.json();
       console.log("d:", d);
+      alert("New data added to the server")
     } catch (err) {
       console.log("err:", err);
     }
@@ -165,6 +173,7 @@
       });
       let d = await response.json();
       console.log("d:", d);
+      alert("data updated to the server")
     } catch (err) {
       console.log("err:", err);
     }
