@@ -279,6 +279,8 @@ function plus()
     let plus= document.getElementById("plus");
     plus.style.backgroundColor = "#4daa0b";
     plus.style.color = "white";
+    // minus.style.backgroundColor = "white"
+
 
     let updatedvalue= document.getElementById("timevalue");
     updatedvalue.innerHTML= count+ " "+ "hr";
@@ -302,6 +304,7 @@ function minus(costvalue)
     let minus= document.getElementById("minus");
     minus.style.backgroundColor = "#4daa0b";
     minus.style.color = "white";
+    // plus.style.backgroundColor = "white";
 
     let updatedvalue= document.getElementById("timevalue");
     updatedvalue.innerHTML= count+ " "+ "hr";
