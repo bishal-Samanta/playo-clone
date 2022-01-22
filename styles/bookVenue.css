@@ -64,6 +64,7 @@ body{
     margin-left: 1%;
     border: 1px solid rgb(233, 232, 232);
     text-align: center;
+    cursor: pointer;
 }
 #sportlogo{
     margin-top: 2%;
@@ -96,6 +97,7 @@ body{
     width:12.50%;
     height:100%;
     border-right: 1px solid rgb(245, 243, 243);
+    cursor: pointer;
 }
 .dayname{
     color: rgb(180, 180, 180);
@@ -132,6 +134,7 @@ body{
     font-size: 12px;
     color:rgb(161, 161, 161);
     line-height: 30px;
+    cursor: pointer;
 }
 /* these div style for small small time divs of half half hour */
 #smalltimeupper{
@@ -153,6 +156,7 @@ body{
     font-size: 12px;
     color:rgb(161, 161, 161);
     line-height: 30px;
+    cursor: pointer;
 }
  /* these div style for small small time divs of half half hour */
 #smalltimelower{
@@ -197,7 +201,8 @@ body{
     text-align: center;
     line-height: 30px;
     font-size: 30px;
-    color:rgb(179, 179, 179)
+    color:rgb(179, 179, 179);
+    cursor: pointer;
 }
 
 /* these style for selecting court main div */
@@ -234,6 +239,7 @@ body{
     text-align: center;
     font-family: 'lato',sans-serif;
     line-height: 35px;
+    cursor: pointer;
 }
 /* these div style is for show total cost after add all items */
 #cost{
@@ -264,6 +270,7 @@ body{
     color:white;
     border-radius:5px;
     border: none;
+    cursor: pointer;
 }
 
 /* these style for cart title */
@@ -412,6 +419,8 @@ body{
     font-size: 15px;
     color: white;
     border: none;
+    text-align: center;
+    cursor: pointer;
 }
 
 #footer{
