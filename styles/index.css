@@ -104,3 +104,31 @@ a {
   height: 281px;
   /* border: 2px solid red; */
 }
+
+/* 
+@media only screen and (min-width:0px) and (max-width:415px){
+  #video{
+    visibility: hidden;
+    width: 100%;
+    
+  }
+  #navbar_container{
+    width: 100%;
+  }
+  body{
+    background-image: url("https://playov2.gumlet.net/home/Banner_image_new%402x.png");
+    width: 100%;
+  }
+
+  #main{
+    width: 100%;
+  }
+
+  #video_container{
+    width: 100%;
+  }
+  #download_app_div{
+    visibility: hidden;
+  }
+
+} */

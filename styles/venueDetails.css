@@ -362,3 +362,36 @@
 
 
      /* Main Body End */
+
+
+
+     /* Media Queries start*/
+     /* @media only screen and (min-width:415px) and (max-width:769px){
+        #container{
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+        }
+        #footer{
+            width: 100%;
+        }
+
+        #infooter{
+            width: 100%;
+            
+        }
+        #div1{
+            width: 100%;
+        }
+        #body{
+            width: 100%;
+            padding: 0px;
+        }
+        .banner{
+            width: 100%;
+        }
+        #navbar{
+            width: 100%;
+        }
+     } */
+
+     /*  Media Queries end */

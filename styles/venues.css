@@ -1,4 +1,8 @@
 
+    #input{
+        box-sizing: border-box;
+    }
+    
     body{
         margin: 0px;
         box-sizing: border-box;
@@ -197,6 +201,7 @@
      #main{
         background-image: url("https://playo-website.gumlet.net/booking/bg-venues.png?auto=format,compress");
         min-height: 111vh;
+        background-repeat: no-repeat;
         object-fit: cover;
         width: 100%;
         z-index: -1;
@@ -372,3 +377,14 @@
 
 
 /* Append Search Results Div End */
+
+
+
+/* Media Queries */
+
+/* 
+@media only screen and (min-width: 377px) and (max-width:769px){
+    #main{
+        min-height: 100vh;
+    }
+} */
