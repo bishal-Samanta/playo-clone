@@ -52,4 +52,13 @@ function dropbox(){
 }
 
 
+var mobnum = JSON.parse(localStorage.getItem("mobileNumber"))
+mobnum.map((elem) =>{
+   document.querySelector("#mobnum").textContent = elem.number;
+  document.querySelector("#mob").textContent = elem.number;
+});
+
+
+
+
 </script>

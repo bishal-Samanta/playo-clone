@@ -40,33 +40,78 @@
 
 
 
-let array_data = JSON.parse(localStorage.getItem("user_profle_data")) || [];
+ let n;
+// var mobnum = JSON.parse(localStorage.getItem("mobileNumber"))
+// mobnum.map((elem) =>{
+  n= document.querySelector("#mobnum").textContent = "8767535476";
+  document.querySelector("#mob").textContent =       "8767535476";
+  document.querySelector("#pp3").textContent =       "8767535476";
+// });
 
+let array_data = [];
 document.getElementById("save").addEventListener("click" , saveval);
 
 function saveval(){
 
-function user_data(){
-    
-  this.First_name  =  document.querySelector(".firstname").value;
-  this.Last_name = document.querySelector(".lastname").value;
-  this.Email     =  document.querySelector(".email").value;
-}
+ let f = document.querySelector(".firstname").value;
+ let l = document.querySelector(".lastname").value;
+ let e = document.querySelector(".email").value;
 
- let X = new user_data()
+function user_data(f,l,e,n){
+    
+  this.First_name  = f;
+  this.Last_name   = l; 
+  this.Email       = e;
+  this.Mob_Number  = n;
+}    
+ let X = new user_data(f,l,e,n)
 
  array_data.push(X)
  localStorage.setItem("user_profle_data" , JSON.stringify(array_data));
     console.log(array_data);
+
+// var placeholderdata = JSON.parse(localStorage.getItem("user_profle_data"));
+// placeholderdata.map((elem) =>{
+
+//     document.querySelector(".firstname").placeholder = elem.First_name //|| "First Name*";
+//  document.querySelector(".lastname").placeholder = elem.Last_name //|| "Last Name*";
+//  document.querySelector(".email").placeholder = elem.Email //|| "Email*";
+
+//})
+
+
+
+}
+
+var placeholderdata = JSON.parse(localStorage.getItem("user_profle_data"));
+placeholderdata.map((elem) =>{
+
+    document.querySelector(".firstname").placeholder = elem.First_name || "First Name*";
+ document.querySelector(".lastname").placeholder = elem.Last_name || "Last Name*";
+ document.querySelector(".email").placeholder = elem.Email || "Email*";
+})
+
+
+document.querySelector("#reset").addEventListener("click" , reset);
+function reset(){
+    document.querySelector(".firstname").placeholder =  "First Name*";
+ document.querySelector(".lastname").placeholder =  "Last Name*";
+ document.querySelector(".email").placeholder =  "Email*";
 }
 
 
+
+
+
+// footer
 
 let foot= document.getElementById("footer");
     import footer from "./components/footer.js";
     foot.innerHTML=footer();
 
 
+
+          //dropbox
 var dropboxshow = document.getElementById("mainm")
 
 dropboxshow.addEventListener("click" , dropbox)
@@ -75,6 +120,14 @@ function dropbox(){
     document.getElementById("menu").style.display ="block";
 }
 
+
+
+document.querySelector(".d2").addEventListener("click" , callback);
+
+function callback(){
+    localStorage.setItem("login" , false);
+    window.location.href = "venues.html";
+}
 
 
 </script>

@@ -28,6 +28,7 @@
 </body>
 </html>
 <script type="module">
+
     import navbarsidebar from "./scripts/sidebarbook.js";
     var body = document.querySelector("#body");
     body.innerHTML = navbarsidebar()
@@ -49,6 +50,14 @@ dropboxshow.addEventListener("click" , dropbox)
 function dropbox(){
     document.getElementById("menu").style.display ="block";
 }
+
+
+
+var mobnum = JSON.parse(localStorage.getItem("mobileNumber"))
+mobnum.map((elem) =>{
+   document.querySelector("#mobnum").textContent = elem.number;
+  document.querySelector("#mob").textContent = elem.number;
+});
 
 
 
