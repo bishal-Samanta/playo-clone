@@ -276,10 +276,13 @@ function plus()
         alert("We Dont offer More than 5 hrs");
         return false;
     }
+    
     let plus= document.getElementById("plus");
     plus.style.backgroundColor = "#4daa0b";
     plus.style.color = "white";
-    // minus.style.backgroundColor = "white"
+    let minus= document.getElementById("minus");
+     minus.style.backgroundColor = "white";
+     minus.style.color = "grey"
 
 
     let updatedvalue= document.getElementById("timevalue");
@@ -294,17 +297,21 @@ function plus()
 function minus(costvalue)
 {
     
-    count--;
-    if(count < 1){
+    
+    if(count == 1){
 
         return false
     }
+    count--;
+
 
     costvalue = 2200*count;
     let minus= document.getElementById("minus");
     minus.style.backgroundColor = "#4daa0b";
     minus.style.color = "white";
-    // plus.style.backgroundColor = "white";
+    let plus= document.getElementById("plus");
+     plus.style.backgroundColor = "white";
+     plus.style.color = "grey";
 
     let updatedvalue= document.getElementById("timevalue");
     updatedvalue.innerHTML= count+ " "+ "hr";
