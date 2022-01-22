@@ -473,6 +473,7 @@ document.querySelector("#sendOTP").addEventListener("click", ()=>{
     document.querySelector("#rateCount").textContent = vote;
     document.querySelector("#cat").textContent = category;
     document.querySelector("#notBlur").src = imgUrl;
+    document.querySelector("#svgBlur").src = imgUrl;
 
     map_div.innerHTML = `<iframe
                                 width= "100%"
@@ -571,6 +572,10 @@ document.querySelector("#sendOTP").addEventListener("click", ()=>{
 
 
     document.querySelector("#booknow_btn").addEventListener("click", ()=>{
+        window.location.href = "bookVenue.html";
+    })
+
+    document.querySelector("#booknow_btn2").addEventListener("click", ()=>{
         window.location.href = "bookVenue.html";
     })
 
