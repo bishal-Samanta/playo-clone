@@ -1,21 +1,23 @@
 #con {
     display: grid;
-    grid-template-columns: repeat(2, 600px);
-    width: 70%;
+    grid-template-columns: repeat(2, 47.5%);
+    width: 64%;
     margin: auto;
-    grid-gap: 30px 70px;
+    grid-gap: 30px 50px;
     border: 1px solid transparent;
     margin-bottom: 50px;
+    border: 1px solid transparent;
   }
   #places {
+    height: 340px;
     border: 1px solid transparent;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
       rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     border-radius: 5px;
   }
   .conimage {
-    height: 200px;
-    width: 600px;
+    height: 40%;
+    width: 100%;
     border-radius: 5px;
   }
   .imgtext {
@@ -25,14 +27,21 @@
     padding-bottom: 0px;
     font-size: 20px;
     transform: translateY(-50px);
+    font-family: 'lato', sans-serif;
   }
   .highlighttext {
     font-weight: bold;
-    font-size: 20px;
-   
+    font-size: 15px;
+    font-family: 'lato',sans-serif;
+    line-height: 0%;
+    margin-left: 4%;
+   margin-top: 25px;
   }
   .location {
     color: grey;
+    font-family: 'lato',sans-serif;
+    font-size: 13px;
+    margin-left: 4%;
     
   }
   .clockicon {
@@ -41,22 +50,33 @@
     margin-right: 10px;
   }
   .coaching {
-    transform: translateX(200px);
+    text-align: center;
     text-transform: lowercase;
-    color: grey;
+    color: rgb(179, 178, 178);
+    font-family: 'lato', sans-serif;
+    font-size: 15px;
   }
   .timing {
-    padding-right: 20px;
+    margin-top: 20px;
+    margin-left: 3%;
     font-size: 15px;
+    line-height: 0%;
+    font-family: 'lato',sans-serif;
     
   }
   #filter {
-    border: 1px solid transparent;
-    width: 70%;
+    border: 1px solid rgb(221, 221, 221);
+    width: 64%;
+    height: 70px;
     margin: auto;
    display: flex;
-   gap: 150px;
+   margin-top: 1%;
+   border-radius: 10px;
     margin-bottom: 40px;
+    font-family: 'lato', sans-serif;
+    box-sizing: border-box;
+    padding-top: 5px;
+    padding-bottom: 5px;
     
   }
 
@@ -64,6 +84,12 @@
   /* location filter */
   #locationfilter{
     display: flex;
+    width:22%;
+    padding-left: 1%;
+    padding-right: 1%;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    border-right: 1px solid rgb(223, 221, 221);
   }
   .icon {
     height: 25px;
@@ -88,12 +114,13 @@
  #searchicon{
   display: flex;
    border: 1px solid transparent;
+   margin-left: 20px;
  
   
    color: grey;
  }
  .filtertext{
-   font-size: 18px;
+   font-size: 16px;
    cursor: pointer;
  }
  .align{
@@ -104,6 +131,12 @@
  /* search filter */
  #searchfilter,#sportsfilter,#catfilter{
    display: flex;
+   width:26%;
+   border: 1px solid transparent;
+   padding-left: 2%;
+    padding-right: 1%;
+    box-sizing: border-box;
+    border-right: 1px solid rgb(223, 221, 221);
  }
  .shade{
    color: rgb(190, 189, 189);

@@ -7,7 +7,7 @@ html{
 
 #logo{ width: 100px; height: 45px; margin-left: 10px;}
 #pplogo{width: 35px; height: 35px;}
-#explorenavbar{display: flex; padding-top: 10px; height: 40px; box-shadow: rgba(0, 0, 0, 0.185) 0px 3px 5px;
+#explorenavbar{display: flex; height: 65px; box-shadow: rgba(0, 0, 0, 0.185) 0px 3px 5px;
 ; }
 #dropdownarrow{width: 12px; height: 8px;padding-top: 20px; margin-left: 1%;
 
