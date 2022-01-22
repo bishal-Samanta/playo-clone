@@ -75,3 +75,11 @@
 #rightlocation {
   color: grey;
 }
+#block{
+  border: 1px solid black;
+  transform: translateY(330px);
+position: absolute;
+margin-left: 1100px;
+padding: 20px 135px;
+
+}

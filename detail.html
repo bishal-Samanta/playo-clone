@@ -67,9 +67,9 @@
             Giving awareness about international standards and rules
             <br><br>
             Matches are organized under flood lights with 20-20 format on Saturdays and Sundays for children to get them used to difference match situations/conditions.
-          </p> -->
+          </p> 
 
-        <!-- </div>
+         </div>
        
       </div>
       <div id="right">
@@ -80,11 +80,16 @@
         <div id="time"><p >6 AM - 8 AM, 4 PM - 8 PM
         </p></div>
         <div id="rightlocation"><p>Hyderabad</p></div>
-        <div id="call"><p>CALL</p></div>
+        <div id="call" onclick="number()"><p>CALL</p></div>
+        
       </div> -->
+      <div id="num">
+
+      </div>
      
-    </div> 
-    <!-- footer -->
+    </div>
+    
+     <!-- footer -->
     <div id="infooter">
       <div id="div1">
           <div id="weblogo">
@@ -129,6 +134,8 @@
           <a href="https://www.instagram.com/playoapp/"><p>Instagram</p></a>
           <a href="https://www.linkedin.com/company/playo"><p>LinkdIn</p></a>
       </div>
+
+
     
 </body>
 </html>
@@ -232,8 +239,10 @@ display = (e) => {
         <div id="time"><p >${el.timing}
         </p></div>
         <div id="rightlocation"><p>${el.location}</p></div>
-        <div id="call"><p>CALL</p></div>
-      </div>`;
+        <div id="call" onclick=number() ondblclick=remove() ;><p>CALL</p></div>
+      
+      </div>
+       `;
 
     con.innerHTML+= y
 
@@ -252,7 +261,22 @@ display = (e) => {
   };
 
   add()
+  
+function number(){
+let x= ` 
+      <div id="block">999999999</div>
+     `
+console.log("dlfdl")
+var num= document.getElementById("num")
+     num.innerHTML+=x
 
+}
+
+function remove(){
+  var num= document.getElementById("num")
+  num.innerHTML=null
+ 
+}
 
 
 
