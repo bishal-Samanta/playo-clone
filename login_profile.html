@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+    src="https://kit.fontawesome.com/683b4b40e3.js"
+    crossorigin="anonymous"
+    >
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <style>
+
+
+    </style>
+</head>
+<body>
+
+<div id="body"></div>
+<div id="footer"></div>
+</body>
+</html>
+
+<script type="module">
+    import navbarsidebar from "./scripts/navbar_sidebar.js";
+    var body = document.querySelector("#body");
+    body.innerHTML = navbarsidebar()
+
+    import profile from "./scripts/login_profile.js";
+    
+    var verticalbox2 = document.getElementById("verticalbox2");
+    verticalbox2.innerHTML = profile()
+
+
+
+let array_data = [];
+
+document.getElementById("save").addEventListener("click" , saveval);
+
+function saveval(){
+
+function user_data(){
+    
+  this.First_name  =  document.querySelector(".firstname").value;
+  this.Last_name = document.querySelector(".lastname").value;
+  this.Email     =  document.querySelector(".email").value;
+}
+
+ let X = new user_data()
+
+   array_data.push(X)
+   localStorage.setItem("user_profle_data" , JSON.stringify(array_data));
+    console.log(array_data);
+}
+
+
+
+let foot= document.getElementById("footer");
+    import footer from "./components/footer.js";
+    foot.innerHTML=footer();
+
+
+
+</script>

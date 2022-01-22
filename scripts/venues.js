@@ -125,7 +125,9 @@
         document.querySelector("#show-results-div").append(mainDiv);
 
         mainDiv.addEventListener("click", ()=>{
-            window.location.href = "venueDetails.html";
+          
+            window.location.href = "venueDetail.html";
+
             let arr = [];
             arr.push(el);
             localStorage.setItem("venueDetails", JSON.stringify(arr));
@@ -140,8 +142,10 @@
 
     inputTag.addEventListener("keypress", (event)=>{
         //console.log("Test");
+        if(event.key == "Enter"){
         window.location.href = "venueDetails.html";
         localStorage.setItem("venueDetails", JSON.stringify(data))
+        }
     })
 
 
