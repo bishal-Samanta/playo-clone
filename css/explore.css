@@ -1,3 +1,10 @@
+
+body{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
 #logo{ width: 100px; height: 45px; margin-left: 10px;}
 #pplogo{width: 35px; height: 35px;}
 #explorenavbar{display: flex; padding-top: 10px; height: 40px; box-shadow: rgba(0, 0, 0, 0.185) 0px 3px 5px;

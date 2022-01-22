@@ -1,0 +1,121 @@
+#con {
+    display: grid;
+    grid-template-columns: repeat(2, 600px);
+    width: 70%;
+    margin: auto;
+    grid-gap: 30px 70px;
+    border: 1px solid transparent;
+    margin-bottom: 50px;
+  }
+  #places {
+    border: 1px solid transparent;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 5px;
+  }
+  .conimage {
+    height: 200px;
+    width: 600px;
+    border-radius: 5px;
+  }
+  .imgtext {
+    color: white;
+    position: absolute;
+    margin-left: 10px;
+    padding-bottom: 0px;
+    font-size: 20px;
+    transform: translateY(-50px);
+  }
+  .highlighttext {
+    font-weight: bold;
+    font-size: 20px;
+   
+  }
+  .location {
+    color: grey;
+    
+  }
+  .clockicon {
+    height: 30px;
+    transform: translateY(10px);
+    margin-right: 10px;
+  }
+  .coaching {
+    transform: translateX(200px);
+    text-transform: lowercase;
+    color: grey;
+  }
+  .timing {
+    padding-right: 20px;
+    font-size: 15px;
+    
+  }
+  #filter {
+    border: 1px solid transparent;
+    width: 70%;
+    margin: auto;
+   display: flex;
+   gap: 150px;
+    margin-bottom: 40px;
+    
+  }
+
+
+  /* location filter */
+  #locationfilter{
+    display: flex;
+  }
+  .icon {
+    height: 25px;
+    transform: translateY(18px);
+    margin-right: 6px;
+  }
+  .bold {
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-right: 30px;
+    margin-top: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .icon2 {
+    height: 15px;
+    transform: translateY(30px);
+    margin-right: 8px;
+    
+   
+  }
+ #searchicon{
+  display: flex;
+   border: 1px solid transparent;
+ 
+  
+   color: grey;
+ }
+ .filtertext{
+   font-size: 18px;
+   cursor: pointer;
+ }
+ .align{
+   line-height: 3px;
+ }
+
+
+ /* search filter */
+ #searchfilter,#sportsfilter,#catfilter{
+   display: flex;
+ }
+ .shade{
+   color: rgb(190, 189, 189);
+ 
+ }
+ .space{
+   padding-right: 50px;
+   border: transparent;
+   transform: translateY(-10px);
+ }
+ .space1{
+   padding-right: 20px;
+   border: transparent;
+   transform: translateY(-10px);
+ }
