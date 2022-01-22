@@ -8,6 +8,15 @@
   margin-bottom: 50px;
   border: 1px solid transparent;
 }
+
+
+
+
+
+
+
+
+
 #places {
   height: 340px;
   border: 1px solid transparent;
@@ -152,4 +161,43 @@ display: flex;
  padding-right: 20px;
  border: transparent;
  transform: translateY(-10px);
+}
+
+
+
+
+@media only screen and (min-width: 376px) and (max-width: 768px){
+  #con {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #filter{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+
+  }
+
+  #detect, .icon2, .shade{
+    visibility: hidden;
+
+  }
+
+  #locationfilter, #searchfilter, #sportfilter, #catfilter{
+    border: none;
+  }
+  
+
+  
+
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 375px){
+  #filter{
+    visibility: hidden;
+  }
+  #con {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

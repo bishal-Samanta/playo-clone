@@ -595,6 +595,7 @@ function addtocart()
     let price = count*2200;
     localStorage.setItem("finalPrice", price);
     window.location.href = "pay.html";
+   
 
 
    })
