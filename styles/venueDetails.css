@@ -421,6 +421,8 @@
          column-gap: 33px;
          row-gap: 60px;
          padding-bottom: 30px;
+         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+         padding-top: 30px;
          
 
      }
@@ -589,7 +591,7 @@
 
 
 
-        
+
 
 
 
