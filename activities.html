@@ -1,69 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./styles/activities.css">
-	<link rel="stylesheet" href="./css/popup.css">
-
-	<title>Activities</title>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="./css/activities.css">
+   <link rel="stylesheet" href="./css/popup.css">
 </head>
 <body>
 
-	<!-- header start -->
-	<div id="header">
 
-		<div id="logodiv" >
+    <div id="explorenavbar">
+
+        <div id="logodiv" >
 			<img id="logo" src="https://playo-website.imgix.net/company/logo1.png?auto=compress,format" alt="playo logo">
 		</div>
 
-		<div id="nav2div"> 
+        <div id="nav2div"> 
 			<img id="pplogo" src="https://playo-website.gumlet.net/playo_functional/Icons/user_blank.svg" alt="">
-			<p class="loginp" style="border: 1px solid red; ">Login / Signup</p>
-			<img id="dropdownarrow" src="https://playo-website.gumlet.net/playo_functional/Icons/arrow_light.svg" alt="">
 		</div>
-		
-		
-		
+
+         <p id="myBtn" class="loginp">Login/Signup</p>
+         <img id="dropdownarrow" src="https://playo-website.gumlet.net/playo_functional/Icons/arrow_light.svg" alt="">
+       
 		<div id="dropdowndiv">
-			<div>Profile</div>
-			<br>
-			<div>Logout</div>
+           <div>Profile</div>
+           <br>
+           <div>Logout</div>
+        </div>
+
+		<!--    popupwindow      ------------------------------------------------------ -->
+		<div id="show">
+			<!--popupwindow show here  -->
 		</div>
 
 	</div>
-	<!-- header end -->
 
-	<!--  popupwindow -->
-	<div id="show">
-		<!--popupwindow show here  -->
-	</div>
+<!--  -->
+        <div id="searchbar">
+            <input type="text" id="typesearch" placeholder="Type a city">
+            <input id="searchbtn" type="button" onclick="find()" value="Detect">
+        </div>
 
-
-	<div id="searchbar">
-		<input type="text" id="typesearch" placeholder="Type a city">
-		<input id="searchbtn" type="button" onclick="find()" value="Detect">
-	</div>
-
-	<div id="citynames">
-		<p>All citiies</p>
-		
-		<hr>
-	</div>
-
-
-	<div id="footer"></div>
+     <div id="citynames">
+     <p>All citiies</p>
+     <hr>
+        
+     </div>
 </body>
 </html>
-
-
 <script type="module">
 	import getpopup from "./components/popup.js"
 	document.getElementById("show").innerHTML=getpopup();
 
-	var city_names=['Adilabad',
+	var  city_names=['Adilabad',
 			'Anantapur',
 			'Chittoor',
 			'Kakinada',
@@ -548,85 +539,85 @@
 			'Udham Singh Nagar',
 			'Uttarkashi'];
     city_names.sort((a,b)=>a-b);
-      //console.log(city_names)
+      
 
-     for(var i=0; i<city_names.length; i++){
+    for(var i=0; i<city_names.length; i++){
         var showcities=document.querySelector("#citynames");
-     var p=document.createElement("p");
-     var line=document.createElement("hr");
-         p.innerHTML=city_names[i];
-         showcities.append(p,line);
+     	var p=document.createElement("p");
+     	var line=document.createElement("hr");
+        p.innerHTML=city_names[i];
+        showcities.append(p,line);
      }
 
 	//  popupstartshere-----------------------
-var modal = document.getElementById("myModal");
-var modal1=document.getElementById("myModal1")
+	var modal = document.getElementById("myModal");
+	var modal1=document.getElementById("myModal1")
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-// btn.innerHTML= JSON.parse(localStorage.getItem("myLocal"))[0]|| "Login/Signup";
-var submit=document.getElementById("btn");
-var verify=document.getElementById("btn2")
+	// Get the button that opens the modal
+	var btn = document.getElementById("myBtn");
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-	if (btn.innerHTML=="Login/Signup"){
-		modal.style.display = "block";
+	var submit=document.getElementById("btn");
+	var verify=document.getElementById("btn2")
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+	// When the user clicks the button, open the modal 
+	btn.onclick = function() {
+		if (btn.innerHTML=="Login/Signup"){
+			modal.style.display = "block";
+		}
+		else{
+			document.getElementById("dropdowndiv").style.visibility="visible"
+		}
+	
+
 	}
-	else{
-		document.getElementById("dropdowndiv").style.visibility="visible"
+
+	submit.onclick=function(){
+		var mobnumber=document.querySelector("#mobnum").value;
+		if(mobnumber){
+			modal.style.display = "none";
+			modal1.style.display = "block";
+		}
+		else{
+			alert("pls fill no.");
+		}
 	}
-  
 
-}
-submit.onclick=function(){
-    var mobnumber=document.querySelector("#mobnum").value;
-    //console.log(mobnumber)
- if(mobnumber){
-    modal.style.display = "none";
-    modal1.style.display = "block";
- }
- else{
-     alert("pls fill no.");
- }
-}
-verify.onclick = function(event) {
-    event.preventDefault()
-  var data=JSON.parse(localStorage.getItem("myLocal"))
-  console.log(data[0]);
-  btn.innerHTML=data[0]
-  modal.style.display = "none";
-  modal1.style.display = "none";
+	verify.onclick = function(event) {
+		event.preventDefault()
+		var data=JSON.parse(localStorage.getItem("myLocal"))
+		console.log(data[0]);
+		btn.innerHTML=data[0]
+		modal.style.display = "none";
+		modal1.style.display = "none";
 
-}
+	}
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal1.style.display = "none";
-  modal.style.display = "none";
- 
-}
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+		modal1.style.display = "none";
+		modal.style.display = "none";
+	
+	}
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-    
-  }
-}
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+			
+		}
+	}
 
-document.getElementById("form").addEventListener("submit",myFn)
-//   var arr=JSON.parse(localStorage.getItem("myLocal"))||[]
+	document.getElementById("form").addEventListener("submit",myFn)
 
-function myFn(event)
-{var arr=[];
-event.preventDefault()
-var myobj=document.querySelector("#mobnum").value;
-arr.push(myobj)
-localStorage.setItem("myLocal",JSON.stringify(arr))
-}
+	function myFn(event){
+		var arr=[];
+		event.preventDefault()
+		var myobj=document.querySelector("#mobnum").value;
+		arr.push(myobj)
+		localStorage.setItem("myLocal",JSON.stringify(arr))
+	}
 
 
-    </script>
+</script>

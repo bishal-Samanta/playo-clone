@@ -1,23 +1,21 @@
 body{
-   margin: 0;
-   padding: 0;
+   margin: auto;
 }
-
 #logo{ 
    width: 100px; 
    height: 45px; 
    margin-left: 10px;
-
 }
+
 #pplogo{
    width: 35px; 
    height: 35px;
-
 }
-#header{
+
+#explorenavbar{
    display: flex; 
-   padding-top: 15px; 
-   height: 45px; 
+   padding-top: 10px; 
+   height: 40px; 
    box-shadow: rgba(0, 0, 0, 0.185) 0px 3px 5px;
 }
 
@@ -25,23 +23,15 @@ body{
    width: 12px; 
    height: 8px;
    padding-top: 20px; 
-   margin-top: -5px;
-   margin-left: 10%;
+   margin-left: 1%;
 }
 
 #logodiv{
-   margin-left: 5%;
+   margin-left: 10%;
 }
 
 #nav2div{
-   border: 1px solid green;
-   width: 20%;
-   margin-left: 70%;
-   display: flex;
-}
-
-#nav2div:hover{
-   cursor: pointer;
+   margin-left: 60%;
 }
 
 .loginp{
@@ -93,10 +83,4 @@ body{
 
 #citynames>p{
    padding-left: 10px;
-}
-
-#footer{
-   width: 100%;
-   height: 281px;
-   border: 1px solid red;
 }
