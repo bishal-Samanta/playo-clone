@@ -152,7 +152,7 @@ body{
     width: 40%;
     height: 43px;
     border: 0px;
-
+cursor: pointer;
 }
 #save{
     background-color: #4daa0b;
@@ -260,15 +260,23 @@ a{
     
     border: 1px solid transparent; 
     margin-left: 650px;
-    width: 470px;
+width: 470px;
 display: flex;
 color: #545252;
 height: 70px;
 }
+
+
+#logoutBtn{
+    cursor: pointer;
+}
+
+
 #navdiv ul{
      display: inline-flex;
      list-style: none ;
      gap: 20px;
+
 }
 #down{
     margin-top: 12px;
@@ -293,22 +301,17 @@ height: 70px;
     gap: 20px;
    
 }
-#menu{
-    display: none;
-    background-color: white;
-    
- }
- #navdiv ul li:hover #menu{
+
+ #navdiv ul li #menu{
     box-shadow: 0 1px 6px rgb(0 0 0 / 21%);
     width: 200px ;
-    display: block;
     position: absolute;
    font-size: 18px;
    height: 90px;
    font-size: 18px;
    line-height: 40px;
-   top: 73px;
-   /* right: 10%; */
+   margin-top: 10px;
+   background-color: white;
 }
   #menu ul {
     display: block;
@@ -323,7 +326,6 @@ height: 70px;
 }
 .d2{
     margin-left: 28px;
-    background-color: white;
 }
 #menu a{
     color: gray;

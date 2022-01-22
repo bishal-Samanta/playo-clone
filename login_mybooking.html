@@ -28,7 +28,9 @@
 </body>
 </html>
 <script type="module">
-    import navbarsidebar from "./scripts/sidebarbook.js";
+
+   
+import navbarsidebar from "./scripts/sidebarbook.js";
     var body = document.querySelector("#body");
     body.innerHTML = navbarsidebar()
 
@@ -40,6 +42,50 @@
     let foot= document.getElementById("footer");
     import footer from "./components/footer.js";
     foot.innerHTML=footer();
+
+   
+
+
+    document.querySelector("#menu").style.visibility = "hidden";
+document.querySelector("#mainm").addEventListener("click", first);
+
+function first(){
+    document.querySelector("#menu").style.visibility = "visible";
+    console.log("Test")
+    this.removeEventListener("click", first);
+    document.querySelector("#mainm").addEventListener("click", ()=>{
+        document.querySelector("#menu").style.visibility = "hidden";
+        document.querySelector("#mainm").addEventListener("click", first);
+    })
+}
+
+
+
+
+   var mobnum = localStorage.getItem("mobileNumber");
+
+   document.querySelector("#mobnum").textContent = mobnum;
+   document.querySelector("#mob").textContent = mobnum;
+
+
+
+
+
+
+
+  
+document.querySelector("#logoutBtn").addEventListener("click", ()=>{
+        localStorage.setItem("login", false);
+        window.location.href = "venues.html";
+    })
+
+
+
+
+
+
+
+
 
      
 
