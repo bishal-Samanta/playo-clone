@@ -74,11 +74,12 @@ function first(){
 
 
   
-document.querySelector("#logoutBtn").addEventListener("click", ()=>{
+   document.querySelector("#logoutBtn").addEventListener("click", ()=>{
         localStorage.setItem("login", false);
+        window.localStorage.removeItem('user_details');
+        localStorage.setItem("givedetails", false);
         window.location.href = "venues.html";
     })
-
 
 
 
