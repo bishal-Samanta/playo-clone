@@ -1,4 +1,8 @@
 
+
+
+
+
 // navbar popup functionality
 document.querySelector("#giveOTP").style.visibility = "hidden";
 
@@ -13,6 +17,39 @@ open.addEventListener("click", ()=>{
 close.addEventListener("click", ()=>{
     modal_container.classList.remove("show")
 });
+
+
+
+//If user is logged in 
+login()
+
+function login(){
+    console.log("test")
+    let loginStatus = localStorage.getItem("login")
+    console.log(typeof(loginStatus))
+    if(loginStatus === "true"){
+        let ph = localStorage.getItem("mobileNumber");
+        console.log(ph)
+        document.querySelector("#myBtn").textContent = ph;
+        open.addEventListener("click", ()=>{
+            modal_container.classList.remove("show")
+            window.location.href = "login_profile.html";
+        })
+    
+    }
+    else{
+        return false;
+    }
+
+}
+
+
+
+
+
+
+
+
 
 
 //When user add mobile number to it
@@ -48,6 +85,8 @@ document.querySelector("#sendOTP").addEventListener("click", ()=>{
                 open.addEventListener("click", ()=>{
                     modal_container.classList.remove("show")
                     window.location.href = "login_profile.html";
+                    login()
+
                 })
 
 
