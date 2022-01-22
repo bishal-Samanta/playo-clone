@@ -1,6 +1,9 @@
 
 //Login and pop up full functionalities start
 
+document.querySelector("#logo").addEventListener("click", ()=>{
+    window.location.href = "index.html";
+})
 
 
 // navbar popup functionality
