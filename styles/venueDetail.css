@@ -9,6 +9,44 @@ body{
 
 
 
+  /* these style for need help wala div */
+  #needhelp{
+    position: fixed;
+    bottom: 0%;
+    right:10px;
+    display: flex;
+    box-sizing: border-box;
+    padding-left: 7px;
+    padding-right: 7px;
+    justify-content: space-between;
+    width:12%;
+    height: 32px;
+    background-color: #568c3e;
+    color: white;
+    font-family: 'lato', sans-serif;
+    line-height: 0%;
+    font-size: 14px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    
+}
+
+#needhelpiconimage{
+    margin-top: 4%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #header{
