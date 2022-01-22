@@ -22,7 +22,7 @@ function navbarsidebar(){
         <ul type="none">
         <li class="d1"><a href="login_mybooking.html">My Profile</a></li>
         <div id="pline"></div>
-        <li class="d2"><a href="index.html">Logout</a></li>
+        <li class="d2" id="logoutBtn">Logout</li>
         </ul>
         </div>
         

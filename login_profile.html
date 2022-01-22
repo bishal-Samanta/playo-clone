@@ -29,6 +29,19 @@
 </html>
 
 <script type="module">
+
+   
+
+    // document.querySelector(".d2").onclick = testFunction;
+
+    // function testFunction(){
+    //     localStorage.setItem("login", false);
+    //     window.location.href = "venues.html";
+    // }
+
+
+
+
     import navbarsidebar from "./scripts/navbar_sidebar.js";
     var body = document.querySelector("#body");
     body.innerHTML = navbarsidebar()
@@ -66,6 +79,12 @@ let foot= document.getElementById("footer");
     import footer from "./components/footer.js";
     foot.innerHTML=footer();
 
+
+
+    document.querySelector("#logoutBtn").addEventListener("click", ()=>{
+        localStorage.setItem("login", false);
+        window.location.href = "venues.html";
+    })
 
 
 </script>

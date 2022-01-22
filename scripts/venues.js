@@ -1,5 +1,5 @@
 
-
+//Login and pop up full functionalities start
 
 
 
@@ -42,13 +42,6 @@ function login(){
     }
 
 }
-
-
-
-
-
-
-
 
 
 
@@ -109,7 +102,7 @@ document.querySelector("#sendOTP").addEventListener("click", ()=>{
     }
 })
 
-
+//Login and pop up full functionalities end
 
 
 
