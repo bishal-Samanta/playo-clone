@@ -64,26 +64,49 @@
 //Api call for Sports news content start==================>
 
     import appendNews from "../components/appendnews.js";
-    import apiCall from "../components/apicall.js";
+   // import apiCall from "../components/apicall.js";
 
-   function fetchNews(){
+//    function fetchNews(){
 
-     let apiKey_blog = "b140754e118c4b63a8e580772d4446a1";
+//      //let apiKey_blog = "b140754e118c4b63a8e580772d4446a1";
+//     //let bloglink = `https://newsapi.org/v2/top-headlines?country=in&category=sports&pageSize=10&apiKey=${apiKey_blog}`;
+//     // let response = apiCall(bloglink);
+//     // response.then((res)=>{
+//     //     console.log(res.articles);
+//     //     let appendlocation = document.querySelector(".dynamic-news");
+//     //     appendNews(res.articles, appendlocation);
+
+//     // })
+//     // .catch((e)=>{
+//     //     console.log(e);
+//     // })
+
+//     }
+
+   
+
+    //Edit 
+    function fetchNews(){
+    let apiKey_blog = "b140754e118c4b63a8e580772d4446a1";
     let bloglink = `https://newsapi.org/v2/top-headlines?country=in&category=sports&pageSize=10&apiKey=${apiKey_blog}`;
-    let response = apiCall(bloglink);
-    response.then((res)=>{
-        console.log(res.articles);
+    fetch(bloglink)
+    .then((res)=>{
+        return res.json();
+    })
+    .then((res)=>{
         let appendlocation = document.querySelector(".dynamic-news");
         appendNews(res.articles, appendlocation);
-
     })
     .catch((e)=>{
         console.log(e);
-    })
+    })    
+   }
+   
+   fetchNews()
 
-    }
 
-    fetchNews()
+
+
     
 
 
@@ -105,9 +128,12 @@
        
         let apiKey_health = "b140754e118c4b63a8e580772d4446a1";
         let bloglink_health = `https://newsapi.org/v2/top-headlines?country=in&category=health&pageSize=12&apiKey=${apiKey_health}`;
-        let response_health = apiCall(bloglink_health);
-        response_health.then((res)=>{
-            console.log(res.articles);
+        
+        fetch(bloglink_health)
+        .then((res)=>{
+            return res.json();
+        })
+        .then((res)=>{
             let appendlocation = document.querySelector(".dynamic-news");
             appendNews(res.articles, appendlocation);
         })
@@ -136,12 +162,13 @@
         //Api work ==>
         let apiKey_blog = "b140754e118c4b63a8e580772d4446a1";
         let bloglink = `https://newsapi.org/v2/top-headlines?country=in&category=sports&pageSize=10&apiKey=${apiKey_blog}`;
-        let response = apiCall(bloglink);
-        response.then((res)=>{
-            console.log(res.articles);
+        fetch(bloglink)
+        .then((res)=>{
+            return res.json();
+        })
+        .then((res)=>{
             let appendlocation = document.querySelector(".dynamic-news");
             appendNews(res.articles, appendlocation);
-
         })
         .catch((e)=>{
             console.log(e);
@@ -176,9 +203,13 @@
         console.log("test")
         let search_key = "b140754e118c4b63a8e580772d4446a1";
         let search_link = `https://newsapi.org/v2/everything?q=${value}&from=2022-01-18&sortBy=popularity&pageSize=10&language=en&apiKey=${search_key}`;
-        let response_search = apiCall(search_link);
-        response_search.then((res)=>{
-            console.log(res.articles);
+      
+
+        fetch(search_link)
+        .then((res)=>{
+            return res.json();
+        })
+        .then((res)=>{
             let appendlocation = document.querySelector(".dynamic-news");
             appendNews(res.articles, appendlocation);
         })
